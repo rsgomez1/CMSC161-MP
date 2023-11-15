@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gem : MonoBehaviour
+public class Gem : MonoBehaviour, IInteractable
 {
-    private void OnTriggerEnter(Collider other)
+    public void Interact(Collider other)
     {
-        PlayerInventory inventory = other.GetComponent<PlayerInventory>();
+        PlayerInventory inventory = other.gameObject.GetComponent<PlayerInventory>();
 
         if (inventory != null )
         {
