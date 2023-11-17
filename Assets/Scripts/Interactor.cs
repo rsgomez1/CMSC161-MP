@@ -4,7 +4,7 @@ using UnityEngine;
 
 interface IInteractable
 {
-    public void Interact(Collider other);
+    public void Interact();
 }
 
 public class Interactor : MonoBehaviour
@@ -29,7 +29,7 @@ public class Interactor : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
                 {
-                    interactObj.Interact(hitInfo.collider);
+                    interactObj.Interact();
                 }
             }
         }
