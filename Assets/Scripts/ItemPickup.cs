@@ -8,6 +8,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        SoundManager.soundManager.playPickupSFX();
         InventoryManager.Instance.Add(Item);
         Destroy(gameObject);
     }

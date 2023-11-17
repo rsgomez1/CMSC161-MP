@@ -17,11 +17,7 @@ public class PlayerMovement : MonoBehaviour
     bool isRocked;
     bool isGrounded;
 
-
-    public AudioClip groundFootStepSound;
-    public AudioClip rockFootStepSound;
     public float footStepDelay;
-
     private float nextFootstep = 0;
 
     // Update is called once per frame
@@ -56,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
                 nextFootstep -= Time.deltaTime;
                 if (nextFootstep <= 0)
                 {
-                    GetComponent<AudioSource>().PlayOneShot(groundFootStepSound, 0.7f);
+                    SoundManager.soundManager.playGroundFootStepSFX();
                     nextFootstep += footStepDelay;
                 }
             } else if (isRocked)
@@ -64,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
                 nextFootstep -= Time.deltaTime;
                 if (nextFootstep <= 0)
                 {
-                    GetComponent<AudioSource>().PlayOneShot(rockFootStepSound, 0.7f);
+                    SoundManager.soundManager.playRockFootStepSFX();
                     nextFootstep += footStepDelay;
                 }
             }

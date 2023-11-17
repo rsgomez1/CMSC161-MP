@@ -6,6 +6,7 @@ public class CloseInventory : MonoBehaviour
 {
     public void onClick()
     {
+        SoundManager.soundManager.playMenuSFX();
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
