@@ -22,6 +22,7 @@ public class Dashing : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
+            SoundManager.soundManager.playDashSFX();
             StartCoroutine(Dash());
             cooldown.startCooldown();
         }

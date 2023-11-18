@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip pickupSound;
     public AudioClip groundFootStepSound;
     public AudioClip rockFootStepSound;
+    public AudioClip dashSound;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +31,16 @@ public class SoundManager : MonoBehaviour
 
     public void playGroundFootStepSFX()
     {
-        audioSource.PlayOneShot(groundFootStepSound, 0.7f);
+        audioSource.PlayOneShot(groundFootStepSound);
     }
 
     public void playRockFootStepSFX()
     {
-        audioSource.PlayOneShot(rockFootStepSound, 0.7f);
+        audioSource.PlayOneShot(rockFootStepSound);
+    }
+
+    public void playDashSFX()
+    {
+        audioSource.PlayOneShot(dashSound);
     }
 }
