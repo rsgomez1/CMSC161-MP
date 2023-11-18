@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 22614807}
   - component: {fileID: 22614808}
   - component: {fileID: 22614812}
+  - component: {fileID: 22614813}
+  - component: {fileID: 22614814}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -201,9 +203,9 @@ MonoBehaviour:
   controller: {fileID: 22614807}
   speed: 2.4
   gravity: -9.81
-  jumpHeight: 0.36
+  jumpHeight: 0.42
   groundCheck: {fileID: 1962539502}
-  groundDistance: 0.2
+  groundDistance: 0.05
   rockMask:
     serializedVersion: 2
     m_Bits: 8
@@ -225,6 +227,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 735314720}
   inventoryManager: {fileID: 1108656678}
+--- !u!114 &22614813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22614805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c9b1f81593de2488826c4834040eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 5
+  dashTime: 0.27
+  cooldown:
+    cooldownTime: 0.6
+--- !u!114 &22614814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22614805}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea50cea7c2cca19479a949b4777ec616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &58547139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2938,7 +2968,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 75
+  field of view: 69
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2968,7 +2998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8690653ba43aa849b9fa92a3f52e8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 150
+  mouseSensitivity: 180
   playerBody: {fileID: 22614806}
 --- !u!114 &1251333147
 MonoBehaviour:

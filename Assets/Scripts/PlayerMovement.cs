@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isRocked;
     bool isGrounded;
+    private int numberOfJumps;
+    private int maxJumps = 1;
 
     public float footStepDelay;
     private float nextFootstep = 0;
@@ -23,12 +25,21 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!gameObject.GetComponent<DoubleJump>().enabled)
+        {
+            maxJumps = 1;   
+        } else
+        {
+            maxJumps = 2;
+        }
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         isRocked = Physics.CheckSphere(groundCheck.position, groundDistance, rockMask);
 
         if ((isGrounded && velocity.y < 0) || (isRocked && velocity.y < 0))
         {
             velocity.y = -2f;
+            numberOfJumps = 0;
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -37,32 +48,47 @@ public class PlayerMovement : MonoBehaviour
         Vector3 motion = transform.right * x + transform.forward * z;
         controller.Move(motion * speed * Time.deltaTime);
 
-        if ((Input.GetButtonDown("Jump") && isGrounded) || (Input.GetButtonDown("Jump") && isRocked))
+        if (((Input.GetButtonDown("Jump") && isGrounded) || (Input.GetButtonDown("Jump") && isRocked)) && numberOfJumps < maxJumps)
+        {
+            if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W)) {
+                if (isGrounded)
+                {
+                    SoundManager.soundManager.playGroundFootStepSFX();
+                }
+                else if (isRocked)
+                {
+                    SoundManager.soundManager.playRockFootStepSFX();
+                }
+            } else {
+                nextFootstep = 0;
+            }
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            numberOfJumps++;
+        }
+
+        if (Input.GetButtonDown("Jump") && !isGrounded && !isRocked && numberOfJumps < maxJumps)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            numberOfJumps++;
         }
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W))
         {
-            if (isGrounded)
+            nextFootstep -= Time.deltaTime;
+            if (nextFootstep <= 0)
             {
-                nextFootstep -= Time.deltaTime;
-                if (nextFootstep <= 0)
+                if (isGrounded)
                 {
                     SoundManager.soundManager.playGroundFootStepSFX();
-                    nextFootstep += footStepDelay;
                 }
-            } else if (isRocked)
-            {
-                nextFootstep -= Time.deltaTime;
-                if (nextFootstep <= 0)
+                else if (isRocked)
                 {
                     SoundManager.soundManager.playRockFootStepSFX();
-                    nextFootstep += footStepDelay;
                 }
+                nextFootstep += footStepDelay;
             }
         }
     }

@@ -25,7 +25,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (inventoryItem.id == item.id)
             {
-                inventoryItem.amount++;
+                inventoryItem.amount += item.amount;
                 itemAlreadyInInventory = true;
             }   
         }
