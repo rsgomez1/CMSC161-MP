@@ -20,7 +20,7 @@ public class Dashing : MonoBehaviour
     {
         if (cooldown.isCoolingDown) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
             SoundManager.soundManager.playDashSFX();
             StartCoroutine(Dash());

@@ -10,6 +10,6 @@ public class ItemPickup : MonoBehaviour, IInteractable
     {
         SoundManager.soundManager.playPickupSFX();
         InventoryManager.Instance.Add(Item);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
