@@ -41,6 +41,6 @@ public class SoundManager : MonoBehaviour
 
     public void playDashSFX()
     {
-        audioSource.PlayOneShot(dashSound);
+        audioSource.PlayOneShot(dashSound, 0.3f);
     }
 }

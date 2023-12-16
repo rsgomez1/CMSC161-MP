@@ -8,9 +8,14 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public List<Item> Items = new List<Item>();
+    public bool hasLantern;
+    public bool hasBoots;
+    public bool hasWeapon;
 
     public Transform ItemContent;
     public GameObject InventoryItem;
+
+    public InventoryItemController[] InventoryItems;
 
     private void Awake()
     {
@@ -36,10 +41,21 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    /*public void Remove(Item item)
+    public void Remove(Item item)
     {
         Items.Remove(item);
-    }*/
+    }
+
+    public void Use(Item item)
+    {
+        foreach (Item inventoryItem in Items)
+        {
+            if (inventoryItem.id == item.id)
+            {
+                inventoryItem.amount -= 1;
+            }
+        }
+    }
 
     public void ListItems()
     {
@@ -66,6 +82,18 @@ public class InventoryManager : MonoBehaviour
             }
             
             itemIcon.sprite = item.icon;
+        }
+
+        SetInventoryItems();
+    }
+
+    public void SetInventoryItems()
+    {
+        InventoryItems = ItemContent.GetComponentsInChildren<InventoryItemController>();
+
+        for (int i = 0; i < Items.Count; i++)
+        {
+            InventoryItems[i].AddItem(Items[i]);
         }
     }
 }

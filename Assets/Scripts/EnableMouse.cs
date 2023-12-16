@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnableMouse : MonoBehaviour
 {
     public GameObject inventoryUI;
-    public InventoryManager inventoryManager;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,7 @@ public class EnableMouse : MonoBehaviour
                 Time.timeScale = 0;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                inventoryManager.ListItems();
+                InventoryManager.Instance.ListItems();
             } else
             {
                 Time.timeScale = 1;
