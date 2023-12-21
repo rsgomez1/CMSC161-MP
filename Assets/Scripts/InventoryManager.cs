@@ -48,21 +48,12 @@ public class InventoryManager : MonoBehaviour
 
     public void Use(Item item)
     {
-        foreach (Item inventoryItem in Items)
-        {
-            if (inventoryItem.id == item.id)
-            {
-                inventoryItem.amount -= 1;
-            }
-        }
+        item.amount -= 1;
     }
 
     public void ListItems()
     {
-        foreach (Transform item in ItemContent)
-        {
-            Destroy(item.gameObject);
-        }
+        CleanList();
 
         foreach (var item in Items)
         {
@@ -85,6 +76,14 @@ public class InventoryManager : MonoBehaviour
         }
 
         SetInventoryItems();
+    }
+
+    public void CleanList()
+    {
+        foreach (Transform item in ItemContent)
+        {
+            Destroy(item.gameObject);
+        }
     }
 
     public void SetInventoryItems()

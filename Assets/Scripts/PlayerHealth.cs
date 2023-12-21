@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -30,19 +31,20 @@ public class PlayerHealth : MonoBehaviour
         {
             takeDamage(10);
         }
-        }
+    }
 
     public void increaseHealth(int health)
     {
-        int newHealth = currentHealth + health;
-
-        if (newHealth > 100)
+        if (currentHealth + health > 100)
         {
-            healthBar.setHealth(100);
+            currentHealth = 100;
+            
         } else
         {
-            healthBar.setHealth(newHealth);
+            currentHealth += health;
         }
+
+        healthBar.setHealth(currentHealth);
     }
 
     void takeDamage(int damage)

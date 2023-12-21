@@ -28,6 +28,7 @@ public class EnableMouse : MonoBehaviour
                 Time.timeScale = 1;
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                InventoryManager.Instance.CleanList();
             }
             
         }

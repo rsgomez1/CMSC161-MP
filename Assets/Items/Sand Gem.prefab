@@ -129,7 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 211323594399360226}
-  pickupSound: {fileID: 8300000, guid: 97f94c430fc71ad4a9e12031ec93a0e0, type: 3}
 --- !u!114 &211323594399360226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +145,7 @@ MonoBehaviour:
   itemName: Sand Gem
   amount: 1
   value: 0
+  type: S
   icon: {fileID: 21300000, guid: 3f519398f0b8d1f4492ea4676527373a, type: 3}
 --- !u!82 &-4295970070643349976
 AudioSource:

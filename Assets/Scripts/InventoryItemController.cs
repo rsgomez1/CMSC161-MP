@@ -7,6 +7,7 @@ using static UnityEditor.Progress;
 
 public class InventoryItemController : MonoBehaviour
 {
+    public GameObject ItemAmount;
     Item item;
     
     public void AddItem(Item newItem)
@@ -23,6 +24,7 @@ public class InventoryItemController : MonoBehaviour
     public void UpdateAmount()
     {
         InventoryManager.Instance.Use(item);
+        ItemAmount.GetComponent<Text>().text = item.amount.ToString();
     }
 
     public void UseItem()
@@ -32,12 +34,12 @@ public class InventoryItemController : MonoBehaviour
             case 2:
                 PlayerHealth.Instance.increaseHealth(item.value);
                 
-                if (item.amount == 1)
-                {
-                    RemoveItem();
-                } else
+                if (item.amount > 1)
                 {
                     UpdateAmount();
+                } else
+                {
+                    RemoveItem();
                 }
                 break;
             default:
