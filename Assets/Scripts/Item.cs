@@ -8,6 +8,5 @@ public class Item : MonoBehaviour
     public string itemName;
     public int amount;
     public int value;
-    public string type;
     public Sprite icon;
 }

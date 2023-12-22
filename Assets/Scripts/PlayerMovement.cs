@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     public float footStepDelay;
     private float nextFootstep = 0;
 
+    public GameObject lightSource;
+
     void Start()
     {
         InventoryManager.Instance.hasBoots = true;
@@ -30,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (InventoryManager.Instance.hasLantern)
+        {
+            lightSource.SetActive(true);
+        }
+
         if (InventoryManager.Instance.hasBoots)
         {
             maxJumps = 2;

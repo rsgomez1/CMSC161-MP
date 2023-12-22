@@ -11,5 +11,14 @@ public class ItemPickup : MonoBehaviour, IInteractable
         SoundManager.soundManager.playPickupSFX();
         InventoryManager.Instance.Add(Item);
         gameObject.SetActive(false);
+
+        switch (Item.id)
+        {
+            case 3:
+                InventoryManager.Instance.hasLantern = true;
+                break;
+            default:
+                break;
+        }     
     }
 }

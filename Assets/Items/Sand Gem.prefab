@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013718473930, guid: 586acbe765df7c34385298970076297e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.404
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013718473930, guid: 586acbe765df7c34385298970076297e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013718473930, guid: 586acbe765df7c34385298970076297e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.498
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013718473930, guid: 586acbe765df7c34385298970076297e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -148,7 +148,6 @@ MonoBehaviour:
   itemName: Sand Gem
   amount: 1
   value: 0
-  type: S
   icon: {fileID: 21300000, guid: 3f519398f0b8d1f4492ea4676527373a, type: 3}
 --- !u!82 &-4295970070643349976
 AudioSource:
