@@ -18,6 +18,7 @@ public class PyramidEntrance : MonoBehaviour
         {
             if (item.id == 1 && item.amount == 5)
             {
+                SoundManager.soundManager.playStoneSlideSFX();
                 Destroy(gameObject);
             }
         }

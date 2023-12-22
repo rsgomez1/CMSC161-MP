@@ -33,7 +33,8 @@ public class InventoryItemController : MonoBehaviour
         {
             case 2:
                 PlayerHealth.Instance.increaseHealth(item.value);
-                
+                SoundManager.soundManager.playGulpSFX();
+
                 if (item.amount > 1)
                 {
                     UpdateAmount();
