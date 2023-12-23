@@ -2654,7 +2654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 1168453508}
-  inventoryManager: {fileID: 0}
 --- !u!114 &584589540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2680,6 +2679,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   footStepDelay: 0.36
+  lightSource: {fileID: 0}
 --- !u!143 &584589541
 CharacterController:
   m_ObjectHideFlags: 0
