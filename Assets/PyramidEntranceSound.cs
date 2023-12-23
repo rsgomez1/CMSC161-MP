@@ -1,13 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PyramidEntrance : MonoBehaviour
+public class PyramidEntranceSound : MonoBehaviour
 {
-    public GameObject Block;
-    public GameObject moveToObject;
-    public float speed;
+    Item gem;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +13,8 @@ public class PyramidEntrance : MonoBehaviour
         {
             if (InventoryManager.Instance.hasLantern && (item.id == 1 && item.amount == 5))
             {
-                Block.transform.position = Vector3.MoveTowards(Block.transform.position, moveToObject.transform.position, speed);
+                SoundManager.soundManager.playStoneSlideSFX();
+                Destroy(gameObject.GetComponent<PyramidEntranceSound>());
             }
         }
     }
