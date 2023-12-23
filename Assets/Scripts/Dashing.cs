@@ -6,8 +6,8 @@ public class Dashing : MonoBehaviour
 {
     CharacterController characterController;
 
-    [SerializeField] private float dashSpeed = 20f;
-    [SerializeField] private float dashTime = 1.5f;
+    public float dashSpeed = 20f;
+    public float dashTime = 1.5f;
 
     [SerializeField] private Cooldown cooldown;
 
