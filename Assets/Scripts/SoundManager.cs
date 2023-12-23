@@ -14,11 +14,17 @@ public class SoundManager : MonoBehaviour
     public AudioClip stoneSlideSound;
     public AudioClip gulpSound;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        soundManager = this;
+    void Awake()
+    {       
+        if (soundManager != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         audioSource = GetComponent<AudioSource>();
+        soundManager = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void playMenuSFX()
