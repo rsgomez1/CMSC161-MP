@@ -22,15 +22,29 @@ public class PlayerMovement : MonoBehaviour
     public float footStepDelay;
     private float nextFootstep = 0;
 
+    public GameObject lightSource;
+
+    void Start()
+    {
+        InventoryManager.Instance.hasBoots = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (!gameObject.GetComponent<DoubleJump>().enabled)
+        if (InventoryManager.Instance.hasLantern)
         {
-            maxJumps = 1;   
-        } else
+            lightSource.SetActive(true);
+        }
+
+        if (InventoryManager.Instance.hasBoots)
         {
             maxJumps = 2;
+            gameObject.GetComponent<Dashing>().enabled = true;
+        } else
+        {
+            maxJumps = 1;
+            gameObject.GetComponent<Dashing>().enabled = false;
         }
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PyramidEntrance : MonoBehaviour
 {
-    public InventoryManager inventoryManager;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +14,12 @@ public class PyramidEntrance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (Item item in inventoryManager.Items)
+        foreach (Item item in InventoryManager.Instance.Items)
         {
             if (item.id == 1 && item.amount == 5)
             {
-                gameObject.SetActive(false);
+                SoundManager.soundManager.playStoneSlideSFX();
+                Destroy(gameObject);
             }
         }
     }

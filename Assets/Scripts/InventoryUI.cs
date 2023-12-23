@@ -5,7 +5,13 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+    public static InventoryUI Instance;
     public GameObject inventoryUI;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
