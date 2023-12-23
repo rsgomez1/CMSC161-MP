@@ -31,7 +31,7 @@ public class NextScene : MonoBehaviour
 
             PlayerInstance.Instance.transform.Find("Cylinder").localScale = Vector3.one;
             PlayerInstance.Instance.transform.Find("Camera").transform.localPosition = new Vector3(0, 0.6f, 0);
-            PlayerInstance.Instance.transform.Find("Camera").GetComponent<Interactor>().InteractRange = 1.2f;
+            PlayerInstance.Instance.transform.Find("Camera").GetComponent<Interactor>().InteractRange = 1.8f;
             PlayerInstance.Instance.transform.Find("GroundCheck").transform.localPosition = new Vector3(0, -1, 0);
             PlayerInstance.Instance.transform.Find("Lantern").transform.localPosition = new Vector3(0.3f, -0.27f, 0.4f);
             PlayerInstance.Instance.transform.Find("Lantern").GetComponent<Light>().range = 9;
