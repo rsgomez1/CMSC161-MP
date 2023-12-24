@@ -1422,7 +1422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6529044669252387415}
   m_Layer: 0
-  m_Name: Gates
+  m_Name: Gates Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
