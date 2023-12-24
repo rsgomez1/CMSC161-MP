@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     public string sceneName;
+    public float x;
+    public float y;
+    public float z;
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,7 +18,7 @@ public class NextScene : MonoBehaviour
             SceneManager.LoadScene(sceneName);
 
             PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
-            PlayerInstance.Instance.transform.position = new Vector3(166, 3, 97);
+            PlayerInstance.Instance.transform.position = new Vector3(x, y, z);
             PlayerInstance.Instance.transform.rotation = Quaternion.identity;
             PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
             
