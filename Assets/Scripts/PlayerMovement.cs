@@ -31,8 +31,6 @@ public class PlayerMovement : MonoBehaviour
     public int attackDamage = 3;
     public LayerMask attackLayer;
 
-    public GameObject hitEffect;
-
     bool attacking = false;
     bool readyToAttack = true;
     int attackCount;
@@ -172,14 +170,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Physics.Raycast(gameObject.transform.Find("Camera").transform.position, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
         {
-            HitTarget(hit.point);
+            if(hit.transform.TryGetComponent<Enemy>(out Enemy T))
+            {
+                T.TakeDamage(attackDamage);
+            }
         }
-    }
-
-    void HitTarget(Vector3 pos)
-    {
-        GameObject GO = Instantiate(hitEffect, pos, Quaternion.identity);
-        Destroy(GO, 10);
     }
 
     public void ChangeAnimationState(string newState)
