@@ -4216,7 +4216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2968278756814813766}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20943,7 +20943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4136446034346040396}
   m_Layer: 0
-  m_Name: Lights
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37007,7 +37007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6286707918770818107}
   m_Layer: 0
-  m_Name: Stairs
+  m_Name: Stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37021,8 +37021,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3663706449989518951}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.892894, y: -23.610128, z: -35.21088}
+  m_LocalRotation: {x: -0.0000018099951, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37036,7 +37036,7 @@ Transform:
   - {fileID: 1249088833703444467}
   - {fileID: 4257068755910429785}
   - {fileID: 5877175386511770899}
-  m_Father: {fileID: 8855137129503316125}
+  m_Father: {fileID: 6796789354812659599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3670522387714619043
 GameObject:
@@ -56037,6 +56037,7 @@ Transform:
   - {fileID: 324686650890695475}
   - {fileID: 4016587309326085600}
   - {fileID: 5172525312364757880}
+  - {fileID: 6286707918770818107}
   m_Father: {fileID: 8855137129503316125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5562305608206134056
@@ -86833,10 +86834,9 @@ Transform:
   - {fileID: 7883904941648849436}
   - {fileID: 6796789354812659599}
   - {fileID: 1692179384782421510}
-  - {fileID: 4643306990992161832}
-  - {fileID: 3596809249712014011}
   - {fileID: 4136446034346040396}
-  - {fileID: 6286707918770818107}
+  - {fileID: 3596809249712014011}
+  - {fileID: 4643306990992161832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &8562859416124652218
