@@ -114,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && !isGrounded && !isRocked && (numberOfJumps < maxJumps))
         {
+            SoundManager.soundManager.playDoubleJumpSFX();
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             numberOfJumps++;
         }
@@ -161,10 +162,12 @@ public class PlayerMovement : MonoBehaviour
 
         if(attackCount == 0)
         {
+            SoundManager.soundManager.playSlash1SFX();
             ChangeAnimationState(ATTACK1);
             attackCount++;
         } else
         {
+            SoundManager.soundManager.playSlash2SFX();
             ChangeAnimationState(ATTACK2);
             attackCount = 0;
         }
@@ -182,7 +185,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(hit.transform.TryGetComponent<Enemy>(out Enemy T))
             {
-                print("DAMAGE");
+                SoundManager.soundManager.playHitSFX();
                 T.TakeDamage(attackDamage);
             }
         }

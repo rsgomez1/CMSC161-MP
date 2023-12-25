@@ -11,8 +11,12 @@ public class SoundManager : MonoBehaviour
     public AudioClip groundFootStepSound;
     public AudioClip rockFootStepSound;
     public AudioClip dashSound;
+    public AudioClip jumpSound;
     public AudioClip stoneSlideSound;
     public AudioClip gulpSound;
+    public AudioClip slashSound1;
+    public AudioClip slashSound2;
+    public AudioClip hitSound;
 
     void Awake()
     {       
@@ -49,7 +53,12 @@ public class SoundManager : MonoBehaviour
 
     public void playDashSFX()
     {
-        audioSource.PlayOneShot(dashSound, 0.3f);
+        audioSource.PlayOneShot(dashSound, 0.5f);
+    }
+
+    public void playDoubleJumpSFX()
+    {
+        audioSource.PlayOneShot(jumpSound, 0.3f);
     }
 
     public void playStoneSlideSFX()
@@ -60,5 +69,20 @@ public class SoundManager : MonoBehaviour
     public void playGulpSFX()
     {
         audioSource.PlayOneShot(gulpSound);
+    }
+
+    public void playSlash1SFX()
+    {
+        audioSource.PlayOneShot(slashSound1, 0.3f);
+    }
+
+    public void playSlash2SFX()
+    {
+        audioSource.PlayOneShot(slashSound2, 0.3f);
+    }
+
+    public void playHitSFX()
+    {
+        audioSource.PlayOneShot(hitSound, 0.3f);
     }
 }
