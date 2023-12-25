@@ -10,6 +10,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
     {
         SoundManager.soundManager.playPickupSFX();
         InventoryManager.Instance.Add(Item);
+        gameObject.transform.parent = InventoryManager.Instance.gameObject.transform;
         gameObject.SetActive(false);
 
         switch (Item.id)

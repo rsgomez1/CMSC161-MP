@@ -38,6 +38,7 @@ public class InventoryManager : MonoBehaviour
             if (inventoryItem.id == item.id)
             {
                 inventoryItem.amount += item.amount;
+                Destroy(item.gameObject);
                 itemAlreadyInInventory = true;
             }   
         }
