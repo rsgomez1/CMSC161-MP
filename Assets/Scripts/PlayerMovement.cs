@@ -45,10 +45,13 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("")]
     public GameObject lightSource;
-
+    public GameObject arms;
+    public GameObject weaponCamera;
+    
     void Start()
     {
         InventoryManager.Instance.hasBoots = true;
+        InventoryManager.Instance.hasWeapon = true;
     }
 
     // Update is called once per frame
@@ -67,6 +70,12 @@ public class PlayerMovement : MonoBehaviour
         {
             maxJumps = 1;
             gameObject.GetComponent<Dashing>().enabled = false;
+        }
+
+        if (InventoryManager.Instance.hasWeapon)
+        {
+            arms.SetActive(true);
+            weaponCamera.SetActive(true);
         }
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -128,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.Mouse0))
+        if(Input.GetKey(KeyCode.Mouse0) && InventoryManager.Instance.hasWeapon)
         {
             Attack();
         }
