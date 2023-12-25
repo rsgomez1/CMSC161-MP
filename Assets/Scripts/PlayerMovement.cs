@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private float nextFootstep = 0;
 
     [Header("Attacking")]
+    public float attackRadius = 1f;
     public float attackDistance = 3f;
     public float attackDelay = 0.4f;
     public float attackSpeed = 1f;
@@ -177,10 +178,11 @@ public class PlayerMovement : MonoBehaviour
 
     void AttackRaycast()
     {
-        if (Physics.Raycast(gameObject.transform.Find("Camera").transform.position, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
+        if (Physics.SphereCast(gameObject.transform.Find("Camera").transform.position, attackRadius, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
         {
             if(hit.transform.TryGetComponent<Enemy>(out Enemy T))
             {
+                print("DAMAGE");
                 T.TakeDamage(attackDamage);
             }
         }
@@ -201,7 +203,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!attacking)
         {
-            if (velocity.x == 0 && velocity.z == 0)
+            if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
             {
                 ChangeAnimationState(IDLE);
             }
