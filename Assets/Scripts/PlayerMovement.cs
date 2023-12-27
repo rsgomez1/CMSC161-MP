@@ -183,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Physics.SphereCast(gameObject.transform.Find("Camera").transform.position, attackRadius, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
         {
-            if(hit.transform.TryGetComponent<Enemy>(out Enemy T))
+            if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth T))
             {
                 SoundManager.soundManager.playHitSFX();
                 T.TakeDamage(attackDamage);
