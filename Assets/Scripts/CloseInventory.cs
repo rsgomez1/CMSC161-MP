@@ -6,6 +6,7 @@ public class CloseInventory : MonoBehaviour
 {
     public void onClick()
     {
+        PlayerInstance.Instance.gameObject.GetComponent<PlayerMovement>().enabled = true;
         SoundManager.soundManager.playMenuSFX();
         Time.timeScale = 1;
         Cursor.visible = false;

@@ -26,6 +26,8 @@ public class NextScene : MonoBehaviour
             PlayerInstance.Instance.GetComponent<CharacterController>().skinWidth = 0.08f;
             PlayerInstance.Instance.GetComponent<CharacterController>().radius = 0.5f;
             PlayerInstance.Instance.GetComponent<CharacterController>().height = 2;
+            PlayerInstance.Instance.GetComponent<CapsuleCollider>().radius = 0.5f;
+            PlayerInstance.Instance.GetComponent<CapsuleCollider>().height = 2;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 9;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().gravity = -18;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.2f;

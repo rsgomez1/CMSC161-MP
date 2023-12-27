@@ -17,4 +17,12 @@ public class PlayerInstance : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "EnemySword")
+        {
+            PlayerHealth.Instance.takeDamage(15);
+        }
+    }
 }

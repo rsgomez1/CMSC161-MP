@@ -34,10 +34,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Delete))
-        {
-            takeDamage(10);
-        }
+
     }
 
     public void increaseHealth(int health)
@@ -54,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.setHealth(currentHealth);
     }
 
-    void takeDamage(int damage)
+    public void takeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);

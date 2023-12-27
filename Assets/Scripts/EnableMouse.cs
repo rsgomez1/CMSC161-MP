@@ -15,12 +15,14 @@ public class EnableMouse : MonoBehaviour
             {
                 Time.timeScale = 0;
                 Cursor.visible = true;
+                gameObject.GetComponent<PlayerMovement>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 InventoryManager.Instance.ListItems();
             } else
             {
                 Time.timeScale = 1;
                 Cursor.visible = false;
+                gameObject.GetComponent<PlayerMovement>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
                 InventoryManager.Instance.CleanList();
             }

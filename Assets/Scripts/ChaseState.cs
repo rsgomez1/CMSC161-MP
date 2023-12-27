@@ -8,7 +8,7 @@ public class ChaseState : StateMachineBehaviour
     NavMeshAgent agent;
     Transform player;
     float chaseRange = 12f;
-    float attackRange = 3f;
+    float attackRange = 2.5f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
