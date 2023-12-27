@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackState : StateMachineBehaviour
 {
     Transform player;
-    float attackRange = 3f;
+    float attackRange = 1.5f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

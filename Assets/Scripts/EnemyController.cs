@@ -16,4 +16,9 @@ public class EnemyController : MonoBehaviour
     {
         Sword.GetComponent<Collider>().enabled = false;
     }
+
+    public void playSlashSFX()
+    {
+        SoundManager.soundManager.playSlash2SFX();
+    }
 }
