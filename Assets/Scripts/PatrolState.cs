@@ -5,16 +5,18 @@ using UnityEngine.AI;
 
 public class PatrolState : StateMachineBehaviour
 {
-    float timer;
-    int count = 0;
+    int i = 1;
     List<Transform> waypoints = new List<Transform>();
     NavMeshAgent agent;
+    Transform player;
+    float chaseRange = 12f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
-        timer = 0;
+        agent.speed = 3.5f;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         foreach (Transform t in agent.gameObject.transform.parent.transform)
         {
             if (t.tag == "Waypoints")
@@ -23,7 +25,7 @@ public class PatrolState : StateMachineBehaviour
             }
         }
 
-        agent.SetDestination(waypoints[count].position);
+        agent.SetDestination(waypoints[i].position);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -31,20 +33,21 @@ public class PatrolState : StateMachineBehaviour
     {
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            if(count > waypoints.Count)
+            animator.SetBool("isPatrolling", false);
+            if (i < waypoints.Count - 1)
             {
-                count = 0;
+                i++;
             } else
             {
-                count++;
+                i = 0;
             }
-            agent.SetDestination(waypoints[count].position);
+            agent.SetDestination(waypoints[i].position);
         }
 
-        timer += Time.deltaTime;
-        if (timer > 20)
+        float distance = Vector3.Distance(player.position, animator.transform.position);
+        if (distance < chaseRange)
         {
-            animator.SetBool("isPatrolling", false);
+            animator.SetBool("isChasing", true);
         }
     }
 

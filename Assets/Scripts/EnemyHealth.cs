@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     int currentHealth;
-    public int maxHealth;
+    public int maxHealth = 100;
+    public Animator animator;
 
     void Awake()
     {
@@ -18,11 +19,16 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Death();
+        } else
+        {
+            SoundManager.soundManager.playSkeletonHitSFX();
         }
     }
 
     void Death()
     {
-        Destroy(gameObject);
+        animator.SetTrigger("die");
+        GetComponent<Collider>().enabled = false;
+        SoundManager.soundManager.playSkeletonDeathSFX();
     }
 }

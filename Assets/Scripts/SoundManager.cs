@@ -17,6 +17,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip slashSound1;
     public AudioClip slashSound2;
     public AudioClip hitSound;
+    public AudioClip skeletonHitSound;
+    public AudioClip skeletonDeathSound;
 
     void Awake()
     {       
@@ -84,5 +86,15 @@ public class SoundManager : MonoBehaviour
     public void playHitSFX()
     {
         audioSource.PlayOneShot(hitSound, 0.3f);
+    }
+
+    public void playSkeletonHitSFX()
+    {
+        audioSource.PlayOneShot(skeletonHitSound);
+    }
+
+    public void playSkeletonDeathSFX()
+    {
+        audioSource.PlayOneShot(skeletonDeathSound);
     }
 }

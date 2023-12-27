@@ -185,7 +185,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth T))
             {
-                SoundManager.soundManager.playHitSFX();
                 T.TakeDamage(attackDamage);
             }
         }
