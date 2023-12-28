@@ -53,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(int damage)
     {
+        SoundManager.soundManager.playHitSFX();
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
     }
