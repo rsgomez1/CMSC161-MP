@@ -276,7 +276,7 @@ MonoBehaviour:
     m_Bits: 64
   footStepDelay: 0.36
   attackRadius: 0.42
-  attackDistance: 2.4
+  attackDistance: 1.8
   attackDelay: 0.4
   attackSpeed: 1
   attackDamage: 20

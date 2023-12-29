@@ -36,8 +36,8 @@ public class EnemyHealth : MonoBehaviour
     void Death()
     {
         animator.SetTrigger("die");
-        GetComponent<Collider>().enabled = false;
-        Sword.GetComponent<Collider>().enabled = false;
+        Destroy(GetComponent<Collider>());
+        Destroy(Sword.GetComponent<Collider>());
         SoundManager.soundManager.playSkeletonDeathSFX();
     }
 }
