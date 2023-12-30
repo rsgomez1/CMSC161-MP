@@ -18,6 +18,9 @@ public class ItemPickup : MonoBehaviour, IInteractable
             case 3:
                 InventoryManager.Instance.hasLantern = true;
                 break;
+            case 5:
+                InventoryManager.Instance.hasBoots = true;
+                break;
             default:
                 break;
         }     

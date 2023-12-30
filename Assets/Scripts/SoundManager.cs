@@ -70,7 +70,7 @@ public class SoundManager : MonoBehaviour
 
     public void playGulpSFX()
     {
-        audioSource.PlayOneShot(gulpSound);
+        audioSource.PlayOneShot(gulpSound, 1.5f);
     }
 
     public void playSlash1SFX()

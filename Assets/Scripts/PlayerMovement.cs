@@ -51,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
-        InventoryManager.Instance.hasBoots = true;
         InventoryManager.Instance.hasWeapon = true;
     }
 
