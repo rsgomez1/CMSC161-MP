@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInstance : MonoBehaviour
 {
     public static PlayerInstance Instance;
+    public GameObject loader;
 
     private void Awake()
     {
