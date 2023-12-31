@@ -14580,7 +14580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level2
   movx: 166
-  movy: 3
+  movy: 3.5
   movz: 97
   rotx: 0
   roty: 0

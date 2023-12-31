@@ -33,9 +33,7 @@ public class NextScene : MonoBehaviour
     public async void LoadScene(string sceneName)
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
-        scene.allowSceneActivation = false;
         loader.SetActive(true);
-        scene.allowSceneActivation = true;
 
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
         PlayerInstance.Instance.transform.position = new Vector3(movx, movy, movz);
@@ -50,12 +48,12 @@ public class NextScene : MonoBehaviour
             PlayerInstance.Instance.GetComponent<CharacterController>().stepOffset = 0.45f;
             PlayerInstance.Instance.GetComponent<CapsuleCollider>().radius = 0.69f;
             PlayerInstance.Instance.GetComponent<CapsuleCollider>().height = 2.15f;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 6;
+            PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 9;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().gravity = -18;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.2f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().groundDistance = 0.1f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().footStepDelay = 0.42f;
-            PlayerInstance.Instance.GetComponent<Dashing>().dashSpeed = 12;
+            PlayerInstance.Instance.GetComponent<Dashing>().dashSpeed = 15;
 
             PlayerInstance.Instance.transform.Find("Cylinder").localScale = Vector3.one;
             PlayerInstance.Instance.transform.Find("Camera").transform.localPosition = new Vector3(0, 0.6f, 0);
