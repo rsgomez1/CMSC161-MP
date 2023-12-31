@@ -314,7 +314,7 @@ MonoBehaviour:
   dashSpeed: 7
   dashTime: 0.21
   cooldown:
-    cooldownTime: 0.6
+    cooldownTime: 0.9
 --- !u!114 &22614814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4727,10 +4727,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.07500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.263
       objectReference: {fileID: 0}
@@ -8461,14 +8457,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1627027752050955468, guid: 9ae8b8bc18ee0e24cab450c574451f94, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1627027752050955468, guid: 9ae8b8bc18ee0e24cab450c574451f94, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1627027752050955468, guid: 9ae8b8bc18ee0e24cab450c574451f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.309
       objectReference: {fileID: 0}
@@ -9444,10 +9432,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.07500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.928
       objectReference: {fileID: 0}
@@ -9713,10 +9697,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.07500001
-      objectReference: {fileID: 0}
     - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75.037
@@ -13366,10 +13346,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.07500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.92
       objectReference: {fileID: 0}
@@ -14176,10 +14152,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.07500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108662865969383551, guid: b5697488dae84f846b8405ff38836f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.404
       objectReference: {fileID: 0}
@@ -14359,9 +14331,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level2
-  x: 166
-  y: 3
-  z: 97
+  movx: 166
+  movy: 2.9
+  movz: 96
+  rotx: 0
+  roty: 0
+  rotz: 0
 --- !u!1 &2104007543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013553030096, guid: d6238962ede8add4b877e688a0620c24, type: 3}

@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     public string sceneName;
-    public float x;
-    public float y;
-    public float z;
+    public float movx;
+    public float movy;
+    public float movz;
+    public float rotx;
+    public float roty;
+    public float rotz;
 
     void OnTriggerEnter(Collider other)
     {
@@ -18,16 +21,16 @@ public class NextScene : MonoBehaviour
             SceneManager.LoadScene(sceneName);
 
             PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
-            PlayerInstance.Instance.transform.position = new Vector3(x, y, z);
-            PlayerInstance.Instance.transform.rotation = Quaternion.identity;
+            PlayerInstance.Instance.transform.position = new Vector3(movx, movy, movz);
+            PlayerInstance.Instance.transform.rotation = new Quaternion(rotx, roty, rotz, 1); ;
             PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
 
             if (sceneName == "Level2")
             {
-                PlayerInstance.Instance.GetComponent<CharacterController>().stepOffset = 0.3f;
                 PlayerInstance.Instance.GetComponent<CharacterController>().skinWidth = 0.08f;
                 PlayerInstance.Instance.GetComponent<CharacterController>().radius = 0.5f;
                 PlayerInstance.Instance.GetComponent<CharacterController>().height = 2;
+                PlayerInstance.Instance.GetComponent<CharacterController>().stepOffset = 0.45f;
                 PlayerInstance.Instance.GetComponent<CapsuleCollider>().radius = 0.69f;
                 PlayerInstance.Instance.GetComponent<CapsuleCollider>().height = 2.15f;
                 PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 6;

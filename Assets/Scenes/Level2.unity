@@ -2475,10 +2475,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boots
       objectReference: {fileID: 0}
-    - target: {fileID: 1749637015145182594, guid: 0604b44bf75da7646bdcb120be2d8ee6, type: 3}
-      propertyPath: m_TagString
-      value: Selectable
-      objectReference: {fileID: 0}
     - target: {fileID: 1750497022955836149, guid: 0604b44bf75da7646bdcb120be2d8ee6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.922604
@@ -9051,9 +9047,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level3
-  x: 0
-  y: 0
-  z: 0
+  movx: -91.2
+  movy: 11
+  movz: 248
+  rotx: 0
+  roty: 180
+  rotz: 0
 --- !u!65 &1887445598
 BoxCollider:
   m_ObjectHideFlags: 0
