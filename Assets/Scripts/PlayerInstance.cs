@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerInstance : MonoBehaviour
 {
     public static PlayerInstance Instance;
+    public GameObject canvas;
     public GameObject loader;
 
     private void Awake()

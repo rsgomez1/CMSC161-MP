@@ -35,10 +35,13 @@ public class NextScene : MonoBehaviour
         var scene = SceneManager.LoadSceneAsync(sceneName);
         loader.SetActive(true);
 
+        PlayerInstance.Instance.GetComponent<PlayerMovement>().enabled = false;
+        PlayerInstance.Instance.GetComponent<Dashing>().enabled = false;
+        PlayerInstance.Instance.canvas.GetComponent<InventoryUI>().enabled = false;
+        PlayerInstance.Instance.GetComponent<EnableMouse>().enabled = false;
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
         PlayerInstance.Instance.transform.position = new Vector3(movx, movy, movz);
         PlayerInstance.Instance.transform.rotation = new Quaternion(rotx, roty, rotz, 1); ;
-        PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
 
         if (sceneName == "Level2")
         {
@@ -50,7 +53,7 @@ public class NextScene : MonoBehaviour
             PlayerInstance.Instance.GetComponent<CapsuleCollider>().height = 2.15f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 9;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().gravity = -18;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.2f;
+            PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.8f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().groundDistance = 0.1f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().footStepDelay = 0.42f;
             PlayerInstance.Instance.GetComponent<Dashing>().dashSpeed = 15;
@@ -66,6 +69,12 @@ public class NextScene : MonoBehaviour
         }
 
         await Task.Delay(1500);
+
+        PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
+        PlayerInstance.Instance.GetComponent<EnableMouse>().enabled = true;
+        PlayerInstance.Instance.canvas.GetComponent<InventoryUI>().enabled = true;
+        PlayerInstance.Instance.GetComponent<Dashing>().enabled = true;
+        PlayerInstance.Instance.GetComponent<PlayerMovement>().enabled = true;
 
         loader.SetActive(false);
     }

@@ -1,33 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class IdleState : StateMachineBehaviour
+public class StationaryIdleState : StateMachineBehaviour
 {
-    float timer;
     Transform player;
-    float chaseRange = 10f;
+    Transform waypoint;
+    float chaseRange = 5f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
-        timer = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        waypoint = GameObject.FindGameObjectWithTag("StationaryWaypoint").transform;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer += Time.deltaTime;
-        if (timer > 5)
-        {
-            animator.SetBool("isPatrolling", true);
-        }
-
-        float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance < chaseRange)
+        float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
+        if (distanceToPlayer < chaseRange)
         {
             animator.SetBool("isChasing", true);
+        }
+
+        float distanceToWaypoint = Vector3.Distance(waypoint.position, animator.transform.position);
+        if (distanceToWaypoint > 1 && distanceToPlayer > chaseRange)
+        {
+            animator.SetBool("isReturning", true);
         }
     }
 

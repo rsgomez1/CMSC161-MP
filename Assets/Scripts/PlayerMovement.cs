@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
-        InventoryManager.Instance.hasWeapon = true;
+        InventoryManager.Instance.hasBoots = true;
     }
 
     // Update is called once per frame

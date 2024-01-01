@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class IdleState : StateMachineBehaviour
+public class ReturnState : StateMachineBehaviour
 {
-    float timer;
+    NavMeshAgent agent;
     Transform player;
-    float chaseRange = 10f;
+    Transform waypoint;
+    float chaseRange = 5f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = 0;
+        agent = animator.GetComponent<NavMeshAgent>();
+        agent.speed = 6f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        waypoint = GameObject.FindGameObjectWithTag("StationaryWaypoint").transform;
+        agent.SetDestination(waypoint.position);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer += Time.deltaTime;
-        if (timer > 5)
+        if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            animator.SetBool("isPatrolling", true);
+            animator.SetBool("isReturning", false);
         }
 
         float distance = Vector3.Distance(player.position, animator.transform.position);
@@ -34,7 +38,7 @@ public class IdleState : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
+        agent.SetDestination(agent.transform.position);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

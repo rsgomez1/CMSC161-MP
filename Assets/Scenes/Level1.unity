@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d408959674add3e49b9ed9e5ee5a1335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1631547183}
   loader: {fileID: 2058459401}
 --- !u!136 &22614815
 CapsuleCollider:
@@ -14539,7 +14540,7 @@ Transform:
   m_GameObject: {fileID: 2103020540}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.49999923, z: -0, w: 0.86602587}
-  m_LocalPosition: {x: -0.8064842, y: 1.6198349, z: 3.2934494}
+  m_LocalPosition: {x: -6.0644836, y: 1.6198349, z: 0.14544678}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14580,7 +14581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level2
   movx: 166
-  movy: 3.5
+  movy: 3
   movz: 97
   rotx: 0
   roty: 0

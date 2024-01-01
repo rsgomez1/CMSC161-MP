@@ -21,6 +21,9 @@ public class ItemPickup : MonoBehaviour, IInteractable
             case 5:
                 InventoryManager.Instance.hasBoots = true;
                 break;
+            case 7:
+                InventoryManager.Instance.hasWeapon = true;
+                break;
             default:
                 break;
         }     
