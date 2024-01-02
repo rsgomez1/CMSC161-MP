@@ -274,7 +274,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  footStepDelay: 0.36
+  footStepDelay: 0.42
   attackRadius: 0.42
   attackDistance: 1.8
   attackDelay: 0.4
@@ -314,7 +314,7 @@ MonoBehaviour:
   dashSpeed: 7
   dashTime: 0.21
   cooldown:
-    cooldownTime: 0.9
+    cooldownTime: 1.2
 --- !u!114 &22614814
 MonoBehaviour:
   m_ObjectHideFlags: 0

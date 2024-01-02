@@ -1044,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388030414902405643, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Name
-      value: StationarySkeleWaypoint (8)
+      value: Green Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 6198385277611776620, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1775,7 +1775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388030414902405643, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Name
-      value: StationarySkeleWaypoint
+      value: Yellow Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 6198385277611776620, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2077,7 +2077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388030414902405643, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Name
-      value: StationarySkeleWaypoint (5)
+      value: Blue Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 6198385277611776620, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2444,6 +2444,18 @@ PrefabInstance:
     - target: {fileID: 121150347378341195, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
       propertyPath: m_Name
       value: Big Room 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592134295894938615, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -90.37366
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863516795591590895, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863516795591590895, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
+      propertyPath: m_Intensity
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6218994482576994816, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
       propertyPath: m_LocalPosition.x

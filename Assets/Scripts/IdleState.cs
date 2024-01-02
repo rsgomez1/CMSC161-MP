@@ -6,7 +6,7 @@ public class IdleState : StateMachineBehaviour
 {
     float timer;
     Transform player;
-    float chaseRange = 10f;
+    float chaseRange = 12f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)

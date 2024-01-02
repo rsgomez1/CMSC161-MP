@@ -55,7 +55,6 @@ public class NextScene : MonoBehaviour
             PlayerInstance.Instance.GetComponent<PlayerMovement>().gravity = -18;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.8f;
             PlayerInstance.Instance.GetComponent<PlayerMovement>().groundDistance = 0.1f;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().footStepDelay = 0.42f;
             PlayerInstance.Instance.GetComponent<Dashing>().dashSpeed = 15;
 
             PlayerInstance.Instance.transform.Find("Cylinder").localScale = Vector3.one;

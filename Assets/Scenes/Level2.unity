@@ -319,7 +319,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 13124261350067781, guid: c38272d25d3c21948abd642bbb0e2ca8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 168
+      value: 131
       objectReference: {fileID: 0}
     - target: {fileID: 13124261350067781, guid: c38272d25d3c21948abd642bbb0e2ca8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 13124261350067781, guid: c38272d25d3c21948abd642bbb0e2ca8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 202
+      value: 216.5
       objectReference: {fileID: 0}
     - target: {fileID: 13124261350067781, guid: c38272d25d3c21948abd642bbb0e2ca8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6048,7 +6048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388030414902405643, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
       propertyPath: m_Name
-      value: SkeleWaypoint (5)
+      value: Red Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 6198385277611776620, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
