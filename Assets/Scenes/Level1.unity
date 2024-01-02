@@ -279,7 +279,7 @@ MonoBehaviour:
   attackDistance: 1.8
   attackDelay: 0.4
   attackSpeed: 1
-  attackDamage: 20
+  attackDamage: 25
   attackLayer:
     serializedVersion: 2
     m_Bits: 128

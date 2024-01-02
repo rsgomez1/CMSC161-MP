@@ -8,7 +8,7 @@ public class ReturnState : StateMachineBehaviour
     NavMeshAgent agent;
     Transform player;
     Transform waypoint;
-    float chaseRange = 5f;
+    float chaseRange = 9f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -16,7 +16,7 @@ public class ReturnState : StateMachineBehaviour
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = 6f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        waypoint = GameObject.FindGameObjectWithTag("StationaryWaypoint").transform;
+        waypoint = agent.gameObject.transform.parent.transform.Find("Waypoint").transform;
         agent.SetDestination(waypoint.position);
     }
 

@@ -7,13 +7,15 @@ public class StationaryIdleState : StateMachineBehaviour
 {
     Transform player;
     Transform waypoint;
-    float chaseRange = 5f;
+    NavMeshAgent agent;
+    float chaseRange = 9f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
+        agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        waypoint = GameObject.FindGameObjectWithTag("StationaryWaypoint").transform;
+        waypoint = agent.gameObject.transform.parent.transform.Find("Waypoint").transform;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

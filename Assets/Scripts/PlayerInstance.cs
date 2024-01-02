@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,7 +26,7 @@ public class PlayerInstance : MonoBehaviour
     {
         if (other.gameObject.tag == "EnemySword")
         {
-            PlayerHealth.Instance.takeDamage(15);
+            PlayerHealth.Instance.takeDamage(other.gameObject.GetComponent<EnemyDamage>().attackDamage);
         }
     }
 }
