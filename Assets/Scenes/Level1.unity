@@ -5,8 +5,8 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
-    smallestHole: 0.25
+    smallestOccluder: 1
+    smallestHole: 0.05
     backfaceThreshold: 100
   m_SceneGUID: 00000000000000000000000000000000
   m_OcclusionCullingData: {fileID: 0}
@@ -8975,7 +8975,7 @@ GameObject:
   - component: {fileID: 1251333147}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9069,7 +9069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8690653ba43aa849b9fa92a3f52e8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 2
   playerBody: {fileID: 22614806}
 --- !u!114 &1251333147
 MonoBehaviour:
@@ -15065,7 +15065,6 @@ SceneRoots:
   - {fileID: 22614806}
   - {fileID: 2032715046}
   - {fileID: 1203083100}
-  - {fileID: 880143640}
   - {fileID: 1367430125}
   - {fileID: 124927291}
   - {fileID: 819926131}
@@ -15078,5 +15077,6 @@ SceneRoots:
   - {fileID: 1315549048}
   - {fileID: 1286588787}
   - {fileID: 1134492385}
+  - {fileID: 880143640}
   - {fileID: 601059087}
   - {fileID: 2136977397}

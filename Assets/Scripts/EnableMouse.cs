@@ -14,6 +14,7 @@ public class EnableMouse : MonoBehaviour
             if (!inventoryUI.activeSelf)
             {
                 Time.timeScale = 0;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = false;
                 Cursor.visible = true;
                 gameObject.GetComponent<PlayerMovement>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
@@ -21,6 +22,7 @@ public class EnableMouse : MonoBehaviour
             } else
             {
                 Time.timeScale = 1;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = true;
                 Cursor.visible = false;
                 gameObject.GetComponent<PlayerMovement>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;

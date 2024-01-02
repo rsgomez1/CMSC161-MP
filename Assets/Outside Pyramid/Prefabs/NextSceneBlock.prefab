@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6248040581123639021}
   - component: {fileID: 2987147509003079625}
   m_Layer: 3
-  m_Name: PyramidEntranceBlock
+  m_Name: NextSceneBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

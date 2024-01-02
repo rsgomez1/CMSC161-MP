@@ -4205,7 +4205,7 @@ GameObject:
   - component: {fileID: 8936665993965733076}
   - component: {fileID: 7087521421669369675}
   - component: {fileID: 2238639998916890856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7902,7 +7902,7 @@ GameObject:
   - component: {fileID: 6841576551079017014}
   - component: {fileID: 8620117233063829816}
   - component: {fileID: 8666776142396937963}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11461,7 +11461,7 @@ GameObject:
   - component: {fileID: 7808931707327688754}
   - component: {fileID: 5766677612905519448}
   - component: {fileID: 1171848699917113420}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15453,6 +15453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 6x5x7
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013319735676, guid: 3cc62c9eb2cae674c90d15cf8b60d64d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013300891412, guid: 3cc62c9eb2cae674c90d15cf8b60d64d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.202576
@@ -15635,6 +15639,10 @@ PrefabInstance:
     - target: {fileID: 1000010631582456, guid: ad9212a6233106e449d805e73c42fa67, type: 3}
       propertyPath: m_Name
       value: Block 2x2x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010631582456, guid: ad9212a6233106e449d805e73c42fa67, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000012107848574, guid: ad9212a6233106e449d805e73c42fa67, type: 3}
       propertyPath: m_LocalPosition.x

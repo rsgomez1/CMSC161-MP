@@ -23,6 +23,10 @@ public class Entrance : MonoBehaviour
             {
                 Block.transform.position = Vector3.MoveTowards(Block.transform.position, moveToObject.transform.position, speed);
             }
+            if (Level == 3 && InventoryManager.Instance.hasWeapon && (item.id == 6 && item.amount == 5))
+            {
+                Block.transform.position = Vector3.MoveTowards(Block.transform.position, moveToObject.transform.position, speed);
+            }
         }
     }
 }
