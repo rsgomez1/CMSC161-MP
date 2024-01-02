@@ -39714,7 +39714,7 @@ GameObject:
   - component: {fileID: 4798939611775997827}
   - component: {fileID: 4809221051571071259}
   - component: {fileID: 8526407469138859961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50400,7 +50400,7 @@ GameObject:
   - component: {fileID: 6149258603431237017}
   - component: {fileID: 6156989313730243329}
   - component: {fileID: 8165294186558136493}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

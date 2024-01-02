@@ -10208,7 +10208,7 @@ GameObject:
   - component: {fileID: 900320610229799205}
   - component: {fileID: 890058947732758069}
   - component: {fileID: 3195610942025430108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sig Sag 2x2 One Sided
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30014,7 +30014,7 @@ GameObject:
   - component: {fileID: 2907405053413671012}
   - component: {fileID: 2917670977639366396}
   - component: {fileID: 6957868726822388225}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32096,7 +32096,7 @@ GameObject:
   - component: {fileID: 3073207583884009895}
   - component: {fileID: 3063205538998286007}
   - component: {fileID: 3229480373479451724}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sig Sag 2x2 One Sided (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33493,7 +33493,7 @@ GameObject:
   - component: {fileID: 3350103638033806375}
   - component: {fileID: 7803174917111784272}
   - component: {fileID: 7727841133034218373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

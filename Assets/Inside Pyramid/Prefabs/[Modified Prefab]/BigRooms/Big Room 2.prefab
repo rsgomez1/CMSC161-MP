@@ -4550,7 +4550,7 @@ GameObject:
   - component: {fileID: 6375597676817425604}
   - component: {fileID: 185315050176081761}
   - component: {fileID: 4191764831309425333}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8629,7 +8629,7 @@ GameObject:
   - component: {fileID: 794498267344172926}
   - component: {fileID: 3913573658997342854}
   - component: {fileID: 8964917737339945416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gate 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
