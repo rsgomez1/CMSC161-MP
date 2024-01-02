@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 67325780553309704}
   - component: {fileID: 41720803593816094}
   - component: {fileID: 49737435271058482}
-  - component: {fileID: 7274749114272265701}
+  - component: {fileID: 3821922277046523766}
   m_Layer: 3
   m_Name: Ground Path One Flat (5)
   m_TagString: Untagged
@@ -189,8 +189,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7274749114272265701
-MeshCollider:
+--- !u!65 &3821922277046523766
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -207,10 +207,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.9999994, z: -0.0000104904175}
 --- !u!1 &88375176618887677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14110,7 +14109,7 @@ GameObject:
   - component: {fileID: 1756515420166946127}
   - component: {fileID: 1737102883719277401}
   - component: {fileID: 1747369065066674037}
-  - component: {fileID: 4526059395605581110}
+  - component: {fileID: 1752306768856402213}
   m_Layer: 3
   m_Name: Ground Path One Flat (1)
   m_TagString: Untagged
@@ -14183,8 +14182,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4526059395605581110
-MeshCollider:
+--- !u!65 &1752306768856402213
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14201,10 +14200,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.999998, z: -0.0000104904175}
 --- !u!1 &1774833579646169981
 GameObject:
   m_ObjectHideFlags: 0
@@ -36962,7 +36960,7 @@ GameObject:
   - component: {fileID: 4652491416844473233}
   - component: {fileID: 4678097493328561543}
   - component: {fileID: 4670087493076670891}
-  - component: {fileID: 7908503029089428071}
+  - component: {fileID: 557102956816498343}
   m_Layer: 3
   m_Name: Ground Path One Flat
   m_TagString: Untagged
@@ -37035,8 +37033,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7908503029089428071
-MeshCollider:
+--- !u!65 &557102956816498343
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -37053,10 +37051,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.9999963, z: -0.000010967255}
 --- !u!1 &4656547710280207152
 GameObject:
   m_ObjectHideFlags: 0
@@ -46059,7 +46056,7 @@ GameObject:
   - component: {fileID: 5729346405218746342}
   - component: {fileID: 5762833574333409776}
   - component: {fileID: 5754819313999328732}
-  - component: {fileID: 6462381555270648247}
+  - component: {fileID: 5715694217867284605}
   m_Layer: 3
   m_Name: Ground Path One Flat (2)
   m_TagString: Untagged
@@ -46132,8 +46129,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6462381555270648247
-MeshCollider:
+--- !u!65 &5715694217867284605
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46150,10 +46147,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.9999987, z: -0.000010967255}
 --- !u!1 &5745072554599741728
 GameObject:
   m_ObjectHideFlags: 0
@@ -68984,7 +68980,7 @@ GameObject:
   - component: {fileID: 8165536164526846092}
   - component: {fileID: 8154549194486802074}
   - component: {fileID: 8146532885185149622}
-  - component: {fileID: 2028826346470965466}
+  - component: {fileID: 4717896513713610082}
   m_Layer: 3
   m_Name: Ground Path One Flat (6)
   m_TagString: Untagged
@@ -69057,8 +69053,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2028826346470965466
-MeshCollider:
+--- !u!65 &4717896513713610082
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -69075,10 +69071,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.99999726, z: -0.0000104904175}
 --- !u!1 &8168908949863646435
 GameObject:
   m_ObjectHideFlags: 0
@@ -73004,7 +72999,7 @@ GameObject:
   - component: {fileID: 8641290656512580437}
   - component: {fileID: 8617357205789379907}
   - component: {fileID: 8625391154639163759}
-  - component: {fileID: 5777011932623134787}
+  - component: {fileID: 2200802788418899961}
   m_Layer: 3
   m_Name: Ground Path One Flat (7)
   m_TagString: Untagged
@@ -73077,8 +73072,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5777011932623134787
-MeshCollider:
+--- !u!65 &2200802788418899961
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73095,10 +73090,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 601aceaec8e6dbe40b761dc4f395498f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 7.999999, y: 2.0000284, z: 8.000006}
+  m_Center: {x: 0.0000009536743, y: 0.9999987, z: -0.0000104904175}
 --- !u!1 &8655319192694761407
 GameObject:
   m_ObjectHideFlags: 0
