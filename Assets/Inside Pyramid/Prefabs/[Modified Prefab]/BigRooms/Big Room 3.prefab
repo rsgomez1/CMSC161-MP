@@ -863,6 +863,7 @@ GameObject:
   - component: {fileID: 3365078222449111397}
   - component: {fileID: 5500910842245425520}
   - component: {fileID: 2513139075388660684}
+  - component: {fileID: 5926798054275890191}
   m_Layer: 0
   m_Name: Ground Stones Tiles 4x4
   m_TagString: Untagged
@@ -935,6 +936,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5926798054275890191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592176776353213707}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000057919835, z: 15.999998}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &597207243893380780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1401,7 @@ GameObject:
   - component: {fileID: 3094637835330842190}
   - component: {fileID: 925706390972362243}
   - component: {fileID: 6960460929982924437}
+  - component: {fileID: 7971917619517040226}
   m_Layer: 0
   m_Name: Ground Stones Tiles 1x4
   m_TagString: Untagged
@@ -1451,6 +1474,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7971917619517040226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815888902361688327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000014479959, z: 3.9999995}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &824118224284486296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5092,6 +5136,7 @@ GameObject:
   - component: {fileID: 7363888971127002520}
   - component: {fileID: 5644161180888430017}
   - component: {fileID: 5291388950597520215}
+  - component: {fileID: 2834556718853630088}
   m_Layer: 0
   m_Name: Ground Stones Tiles 1x4 (2)
   m_TagString: Untagged
@@ -5164,6 +5209,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2834556718853630088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414307964699037213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000014479959, z: 3.9999995}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &3429890314088353812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,6 +5346,7 @@ GameObject:
   - component: {fileID: 8295546322590481368}
   - component: {fileID: 471576883992229043}
   - component: {fileID: 6930519558661816951}
+  - component: {fileID: 2351645684289277461}
   m_Layer: 0
   m_Name: Ground Stones Tiles 4x4 (2)
   m_TagString: Untagged
@@ -5352,6 +5419,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2351645684289277461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432529890260005788}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000057919835, z: 15.999998}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3495578980946107509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6370,6 +6458,7 @@ GameObject:
   - component: {fileID: 7431392920201992252}
   - component: {fileID: 6200483180934442130}
   - component: {fileID: 1173203088482093107}
+  - component: {fileID: 6165907375068249615}
   m_Layer: 0
   m_Name: Ground Stones Tiles 4x4 (3)
   m_TagString: Untagged
@@ -6442,6 +6531,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6165907375068249615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073117793923488806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000057919835, z: 15.999998}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4470848917155492565
 GameObject:
   m_ObjectHideFlags: 0
@@ -9861,6 +9971,7 @@ GameObject:
   - component: {fileID: 8905534886108998813}
   - component: {fileID: 7963863478275118346}
   - component: {fileID: 5987006291075056827}
+  - component: {fileID: 3979537420169288995}
   m_Layer: 0
   m_Name: Ground Stones Tiles 1x4 (3)
   m_TagString: Untagged
@@ -9933,6 +10044,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3979537420169288995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793040572095825180}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000014479959, z: 3.9999995}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &6941423206085613151
 GameObject:
   m_ObjectHideFlags: 0
@@ -11137,6 +11269,7 @@ GameObject:
   - component: {fileID: 3709136533443154148}
   - component: {fileID: 8281167161077950552}
   - component: {fileID: 3362126079882286170}
+  - component: {fileID: 3583337283174784435}
   m_Layer: 0
   m_Name: Ground Stones Tiles 1x4 (1)
   m_TagString: Untagged
@@ -11209,6 +11342,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3583337283174784435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015512951160054327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000014479959, z: 3.9999995}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &8172010705862597712
 GameObject:
   m_ObjectHideFlags: 0
@@ -11977,6 +12131,7 @@ GameObject:
   - component: {fileID: 6034924766855598614}
   - component: {fileID: 7403012145028646617}
   - component: {fileID: 7324089801598859358}
+  - component: {fileID: 1224433807231947545}
   m_Layer: 0
   m_Name: Ground Stones Tiles 4x4 (1)
   m_TagString: Untagged
@@ -12049,6 +12204,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1224433807231947545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564122422443508213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.999998, y: 0.000057919835, z: 15.999998}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8573901447492325428
 GameObject:
   m_ObjectHideFlags: 0
