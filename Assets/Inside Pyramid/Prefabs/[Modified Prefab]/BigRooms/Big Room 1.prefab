@@ -2571,7 +2571,7 @@ GameObject:
   - component: {fileID: 175171811448238265}
   - component: {fileID: 165189392956313349}
   - component: {fileID: 673433770184396764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blocks And Bricks 13 One Sided
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45578,7 +45578,7 @@ GameObject:
   - component: {fileID: 6715453822537151485}
   - component: {fileID: 6707723096476384619}
   - component: {fileID: 3360011726385422191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Block 1x5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

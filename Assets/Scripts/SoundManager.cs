@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager soundManager;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     public AudioClip menuSound;
     public AudioClip pickupSound;
     public AudioClip groundFootStepSound;
@@ -19,6 +19,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip skeletonHitSound;
     public AudioClip skeletonDeathSound;
+    public AudioClip sandKingSound;
 
     void Awake()
     {       
@@ -96,5 +97,10 @@ public class SoundManager : MonoBehaviour
     public void playSkeletonDeathSFX()
     {
         audioSource.PlayOneShot(skeletonDeathSound);
+    }
+
+    public void playSandKingSFX()
+    {
+        audioSource.PlayOneShot(sandKingSound);
     }
 }

@@ -22,7 +22,7 @@ public class EntranceSound : MonoBehaviour
                 SoundManager.soundManager.playStoneSlideSFX();
                 Destroy(gameObject.GetComponent<EntranceSound>());
             }
-            if (Level == 3 && InventoryManager.Instance.hasWeapon && (item.id == 6 && item.amount == 5) && (item.id == 8 && item.amount == 5))
+            if (Level == 3 && InventoryManager.Instance.hasWeapon && (item.id == 6 && item.amount == 5))
             {
                 SoundManager.soundManager.playStoneSlideSFX();
                 Destroy(gameObject.GetComponent<EntranceSound>());

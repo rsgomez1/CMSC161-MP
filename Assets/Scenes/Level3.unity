@@ -546,9 +546,9 @@ MonoBehaviour:
   sceneName: Boss
   movx: -12
   movy: 1
-  movz: 155
+  movz: -12
   rotx: 0
-  roty: 180
+  roty: 0
   rotz: 0
 --- !u!65 &256057189
 BoxCollider:
@@ -580,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 256057187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -104.975, y: 7.171835, z: 382.896}
+  m_LocalPosition: {x: -105.1, y: 7.2, z: 384.64}
   m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -897,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6696658537926202564, guid: 7aa6013beeaad5e40ad6b181dc56a1c3, type: 3}
       propertyPath: speed
-      value: 0.042
+      value: 0.081
       objectReference: {fileID: 0}
     - target: {fileID: 6696658537926202564, guid: 7aa6013beeaad5e40ad6b181dc56a1c3, type: 3}
       propertyPath: moveToObject
