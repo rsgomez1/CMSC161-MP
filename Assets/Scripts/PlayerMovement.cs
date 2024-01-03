@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             numberOfJumps++;
         }
 
-        if (Input.GetButtonDown("Jump") && !isGrounded && !isRocked && (numberOfJumps < maxJumps))
+        if (InventoryManager.Instance.hasBoots && Input.GetButtonDown("Jump") && !isGrounded && !isRocked && (numberOfJumps < maxJumps))
         {
             SoundManager.soundManager.playDoubleJumpSFX();
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -182,9 +182,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Physics.SphereCast(gameObject.transform.Find("Camera").transform.position, attackRadius, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
         {
+            if(hit.transform.TryGetComponent<Shield>(out Shield S)) {
+                SoundManager.soundManager.playShieldBLockhSFX();
+            }
             if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth T))
             {
                 T.TakeDamage(attackDamage);
+            }
+            if (hit.transform.TryGetComponent<BossHealth>(out BossHealth B))
+            {
+                B.TakeDamage(attackDamage);
             }
         }
     }

@@ -595,6 +595,8 @@ GameObject:
   - component: {fileID: 33642704991154838}
   - component: {fileID: 23153551791613398}
   - component: {fileID: 75607955289220127}
+  - component: {fileID: 5032296961419927995}
+  - component: {fileID: 5157291797104314789}
   m_Layer: 7
   m_Name: SHIELD
   m_TagString: Untagged
@@ -681,6 +683,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: e87bf276c093abd449e6d9951346c9e5, type: 2}
   duration: 0.18
+--- !u!114 &5032296961419927995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239292414419848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20f31b68325e32418e66ac70d145fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &5157291797104314789
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239292414419848}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 5a712edeab9b4c24fa95680608a979d4, type: 3}
 --- !u!1 &1274889008887250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1185,7 @@ GameObject:
   - component: {fileID: 23643263296634284}
   - component: {fileID: 1868423651233379223}
   - component: {fileID: 3391286543378252336}
+  - component: {fileID: 5996119136071192990}
   m_Layer: 7
   m_Name: SWORD
   m_TagString: EnemySword
@@ -1257,6 +1294,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: e87bf276c093abd449e6d9951346c9e5, type: 2}
   duration: 0.18
+--- !u!114 &5996119136071192990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443982407616232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426293b7e5bd0cb4da3c85db042be500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 15
 --- !u!1 &1459578443495574
 GameObject:
   m_ObjectHideFlags: 0

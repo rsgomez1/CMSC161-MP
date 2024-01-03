@@ -20,6 +20,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip skeletonHitSound;
     public AudioClip skeletonDeathSound;
     public AudioClip sandKingSound;
+    public AudioClip bossHurtSound;
+    public AudioClip bossDeathSound;
+    public AudioClip shieldBlockSound;
 
     void Awake()
     {       
@@ -102,5 +105,19 @@ public class SoundManager : MonoBehaviour
     public void playSandKingSFX()
     {
         audioSource.PlayOneShot(sandKingSound);
+    }
+    public void playBossHurtSFX()
+    {
+        audioSource.PlayOneShot(bossHurtSound);
+    }
+
+    public void playBossDeathSFX()
+    {
+        audioSource.PlayOneShot(bossDeathSound);
+    }
+
+    public void playShieldBLockhSFX()
+    {
+        audioSource.PlayOneShot(shieldBlockSound);
     }
 }
