@@ -5,6 +5,7 @@ using UnityEngine;
 interface IInteractable
 {
     public void Interact();
+    public void playSound();
 }
 
 public class Interactor : MonoBehaviour
@@ -30,6 +31,7 @@ public class Interactor : MonoBehaviour
                 if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
                 {
                     interactObj.Interact();
+                    interactObj.playSound();
                 }
             }
         }

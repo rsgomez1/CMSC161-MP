@@ -143,7 +143,10 @@ public class PlayerMovement : MonoBehaviour
             Attack();
         }
 
-        SetAnimations();
+        if(InventoryManager.Instance.hasWeapon)
+        {
+            SetAnimations();
+        }        
     }
 
     public void Attack()

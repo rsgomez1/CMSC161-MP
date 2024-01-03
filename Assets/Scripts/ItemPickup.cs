@@ -8,7 +8,6 @@ public class ItemPickup : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        SoundManager.soundManager.playPickupSFX();
         InventoryManager.Instance.Add(Item);
         gameObject.transform.parent = InventoryManager.Instance.gameObject.transform;
         gameObject.SetActive(false);
@@ -27,5 +26,10 @@ public class ItemPickup : MonoBehaviour, IInteractable
             default:
                 break;
         }     
+    }
+
+    public void playSound()
+    {
+        SoundManager.soundManager.playPickupSFX();
     }
 }
