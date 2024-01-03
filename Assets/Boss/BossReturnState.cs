@@ -8,7 +8,7 @@ public class BossReturnState : StateMachineBehaviour
     NavMeshAgent agent;
     Transform player;
     Transform waypoint;
-    float chaseRange = 27f;
+    float chaseRange = 42f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

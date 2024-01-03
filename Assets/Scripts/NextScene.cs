@@ -37,6 +37,7 @@ public class NextScene : MonoBehaviour
 
         PlayerInstance.Instance.GetComponent<PlayerMovement>().enabled = false;
         PlayerInstance.Instance.GetComponent<Dashing>().enabled = false;
+        PlayerInstance.Instance.canvas.GetComponent<PauseMenu>().enabled = false;
         PlayerInstance.Instance.canvas.GetComponent<InventoryUI>().enabled = false;
         PlayerInstance.Instance.GetComponent<EnableMouse>().enabled = false;
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
@@ -72,6 +73,7 @@ public class NextScene : MonoBehaviour
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
         PlayerInstance.Instance.GetComponent<EnableMouse>().enabled = true;
         PlayerInstance.Instance.canvas.GetComponent<InventoryUI>().enabled = true;
+        PlayerInstance.Instance.canvas.GetComponent<PauseMenu>().enabled = true;
         PlayerInstance.Instance.GetComponent<Dashing>().enabled = true;
         PlayerInstance.Instance.GetComponent<PlayerMovement>().enabled = true;
 

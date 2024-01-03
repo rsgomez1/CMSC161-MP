@@ -7,7 +7,7 @@ public class BossChaseState : StateMachineBehaviour
 {
     NavMeshAgent agent;
     Transform player;
-    float chaseRange = 27f;
+    float chaseRange = 42f;
     float attackRange = 6.5f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

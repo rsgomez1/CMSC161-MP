@@ -5,30 +5,52 @@ using UnityEngine;
 public class EnableMouse : MonoBehaviour
 {
     public GameObject inventoryUI;
+    public GameObject pauseMenu;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (!inventoryUI.activeSelf)
+            if (inventoryUI.activeSelf && !pauseMenu.activeSelf)
             {
-                Time.timeScale = 0;
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = false;
-                Cursor.visible = true;
-                gameObject.GetComponent<PlayerMovement>().enabled = false;
-                Cursor.lockState = CursorLockMode.None;
-                InventoryManager.Instance.ListItems();
+                disableM();
+                InventoryManager.Instance.CleanList();
             } else
             {
-                Time.timeScale = 1;
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = true;
-                Cursor.visible = false;
-                gameObject.GetComponent<PlayerMovement>().enabled = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                InventoryManager.Instance.CleanList();
+                enableM();
+                InventoryManager.Instance.ListItems();
             }
-            
         }
+
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            if (pauseMenu.activeSelf && !inventoryUI.activeSelf)
+            {
+                disableM();
+            }
+            else
+            {
+                enableM();                
+            }
+        }
+    }
+
+    public void enableM()
+    {
+        Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = false;
+        Cursor.visible = true;
+        gameObject.GetComponent<PlayerMovement>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void disableM()
+    {
+        Time.timeScale = 1;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = true;
+        Cursor.visible = false;
+        gameObject.GetComponent<PlayerMovement>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
