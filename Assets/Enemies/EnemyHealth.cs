@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    int currentHealth;
-    public int maxHealth;
+    float currentHealth;
+    public float maxHealth;
     public Animator animator;
     public GameObject Body;
     public GameObject Jaw;
@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         currentHealth -= amount;
         if (currentHealth <= 0)
@@ -40,5 +40,6 @@ public class EnemyHealth : MonoBehaviour
         Destroy(Sword.GetComponent<Collider>());
         Destroy(Shield.GetComponent<Collider>());
         SoundManager.soundManager.playSkeletonDeathSFX();
+        PlayerInstance.Instance.GetComponent<PlayerMovement>().attackDamage += 3.5f;
     }
 }

@@ -12,6 +12,7 @@ public class BackToMainMenu : MonoBehaviour
         Destroy(SoundManager.soundManager.gameObject);
         Destroy(PlayerHealth.Instance.gameObject);
         Destroy(InventoryManager.Instance.gameObject);
+        Destroy(InventorySaveSystem.Instance.gameObject);
         SceneManager.LoadScene("Menu");
     }
 }

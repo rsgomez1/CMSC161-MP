@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public float attackDistance = 3f;
     public float attackDelay = 0.4f;
     public float attackSpeed = 1f;
-    public int attackDamage = 3;
+    public float attackDamage = 15;
     public LayerMask attackLayer;
 
     bool attacking = false;
@@ -60,6 +60,9 @@ public class PlayerMovement : MonoBehaviour
         if (InventoryManager.Instance.hasLantern)
         {
             lightSource.SetActive(true);
+        } else
+        {
+            lightSource.SetActive(false);
         }
 
         if (InventoryManager.Instance.hasBoots)
@@ -76,6 +79,10 @@ public class PlayerMovement : MonoBehaviour
         {
             arms.SetActive(true);
             weaponCamera.SetActive(true);
+        } else
+        {
+            arms.SetActive(false);
+            weaponCamera.SetActive(false);
         }
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);

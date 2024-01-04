@@ -5,8 +5,8 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     int count;
-    int currentHealth;
-    public int maxHealth;
+    float currentHealth;
+    public float maxHealth;
     public Animator animator;
     public GameObject Sword;
     public GameObject Shield;
@@ -17,7 +17,7 @@ public class BossHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         currentHealth -= amount;
         if (currentHealth <= 0)

@@ -34,6 +34,7 @@ public class NextScene : MonoBehaviour
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         loader.SetActive(true);
+        scene.allowSceneActivation = false;
 
         PlayerInstance.Instance.GetComponent<PlayerMovement>().enabled = false;
         PlayerInstance.Instance.GetComponent<Dashing>().enabled = false;
@@ -68,6 +69,7 @@ public class NextScene : MonoBehaviour
             PlayerInstance.Instance.transform.Find("Lantern").GetComponent<Light>().intensity = 4.2f;
         }
 
+        scene.allowSceneActivation = true;
         await Task.Delay(1500);
 
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = true;
