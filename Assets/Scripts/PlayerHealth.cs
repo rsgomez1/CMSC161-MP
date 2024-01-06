@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
+    public GameObject gameOverScreen;
 
     private void Awake()
     {
@@ -53,8 +54,30 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        SoundManager.soundManager.playHitSFX();
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Death();
+        }
+        else
+        {
+            SoundManager.soundManager.playHitSFX();
+        }
+    }
+
+    void Death()
+    {
+        SoundManager.soundManager.playDeathSFX();
+        Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = false;
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<InventoryUI>().enabled = false;
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenu>().enabled = false;
+        PlayerInstance.Instance.gameObject.GetComponent<PlayerMovement>().enabled = false;
+        PlayerInstance.Instance.gameObject.GetComponent<EnableMouse>().enabled = false;
+        gameOverScreen.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

@@ -40,8 +40,8 @@ public class EnableMouse : MonoBehaviour
     {
         Time.timeScale = 0;
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = false;
-        Cursor.visible = true;
         gameObject.GetComponent<PlayerMovement>().enabled = false;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -49,8 +49,8 @@ public class EnableMouse : MonoBehaviour
     {
         Time.timeScale = 1;
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseComponent>().enabled = true;
-        Cursor.visible = false;
         gameObject.GetComponent<PlayerMovement>().enabled = true;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

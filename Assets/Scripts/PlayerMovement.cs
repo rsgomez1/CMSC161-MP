@@ -197,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.SphereCast(gameObject.transform.Find("Camera").transform.position, attackRadius, gameObject.transform.Find("Camera").transform.forward, out RaycastHit hit, attackDistance, attackLayer))
         {
             if(hit.transform.TryGetComponent<Shield>(out Shield S)) {
-                SoundManager.soundManager.playShieldBLockhSFX();
+                SoundManager.soundManager.playShieldBLockSFX();
             }
             if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth E))
             {

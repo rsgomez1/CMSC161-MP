@@ -8,6 +8,7 @@ TagManager:
   - Waypoints
   - EnemySword
   - StationaryWaypoint
+  - Canvas
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip bossHurtSound;
     public AudioClip bossDeathSound;
     public AudioClip shieldBlockSound;
+    public AudioClip deathSound;
 
     void Awake()
     {       
@@ -116,8 +117,13 @@ public class SoundManager : MonoBehaviour
         audioSource.PlayOneShot(bossDeathSound);
     }
 
-    public void playShieldBLockhSFX()
+    public void playShieldBLockSFX()
     {
         audioSource.PlayOneShot(shieldBlockSound);
+    }
+
+    public void playDeathSFX()
+    {
+        audioSource.PlayOneShot(deathSound);
     }
 }

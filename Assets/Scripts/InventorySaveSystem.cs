@@ -104,6 +104,7 @@ public class InventorySaveSystem : MonoBehaviour
         PlayerInstance.Instance.GetComponent<CharacterController>().enabled = false;
 
         PlayerHealth.Instance.currentHealth = PlayerPrefs.GetInt("PlayerHealth");
+        PlayerHealth.Instance.healthBar.setHealth(PlayerHealth.Instance.currentHealth);
         PlayerInstance.Instance.GetComponent<PlayerMovement>().attackDamage = PlayerPrefs.GetFloat("PlayerDamage");
         PlayerInstance.Instance.transform.position = new Vector3(PlayerPrefs.GetFloat("movx"), PlayerPrefs.GetFloat("movy"), PlayerPrefs.GetFloat("movz"));
         PlayerInstance.Instance.transform.rotation = new Quaternion(PlayerPrefs.GetFloat("rotx"), PlayerPrefs.GetFloat("roty"), PlayerPrefs.GetFloat("rotz"), 1);
