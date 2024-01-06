@@ -36,7 +36,13 @@ public class PlayerMovement : MonoBehaviour
     bool readyToAttack = true;
     int attackCount;
 
-    [Header("Animation")]
+    [Header("Movement Animation")]
+    public const string IDLEPLAYER = "Idle";
+    public const string WALKPLAYER = "RunForward";
+
+    string currentBodyAnimationState;
+
+    [Header("Combat Animation")]
     public const string IDLE = "Idle";
     public const string WALK = "Walk";
     public const string ATTACK1 = "Attack 1";
@@ -47,12 +53,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("")]
     public GameObject lightSource;
     public GameObject arms;
-    public GameObject weaponCamera;
-    
-    void Start()
-    {
-        /*InventoryManager.Instance.hasBoots = true;*/
-    }
+    public GameObject armsShadow;
+    public GameObject swordShadow;
 
     // Update is called once per frame
     void Update()
@@ -78,11 +80,11 @@ public class PlayerMovement : MonoBehaviour
         if (InventoryManager.Instance.hasWeapon)
         {
             arms.SetActive(true);
-            weaponCamera.SetActive(true);
+            swordShadow.SetActive(true);
         } else
         {
             arms.SetActive(false);
-            weaponCamera.SetActive(false);
+            swordShadow.SetActive(false);
         }
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -153,7 +155,9 @@ public class PlayerMovement : MonoBehaviour
         if(InventoryManager.Instance.hasWeapon)
         {
             SetAnimations();
-        }        
+        }
+
+        SetModelAnimations();
     }
 
     public void Attack()
@@ -214,7 +218,19 @@ public class PlayerMovement : MonoBehaviour
         }
 
         currentAnimationState = newState;
-        GetComponentInChildren<Animator>().CrossFadeInFixedTime(currentAnimationState, 0.2f);
+        arms.GetComponent<Animator>().CrossFadeInFixedTime(currentAnimationState, 0.2f);
+        armsShadow.GetComponent<Animator>().CrossFadeInFixedTime(currentAnimationState, 0.2f);
+    }
+
+    public void ChangeModelAnimationState(string newState)
+    {
+        if (currentBodyAnimationState == newState)
+        {
+            return;
+        }
+
+        currentBodyAnimationState = newState;
+        PlayerInstance.Instance.transform.Find("Model").GetComponent<Animator>().CrossFadeInFixedTime(currentBodyAnimationState, 0.2f);
     }
 
     void SetAnimations()
@@ -229,6 +245,18 @@ public class PlayerMovement : MonoBehaviour
             {
                 ChangeAnimationState(WALK);
             }
+        }
+    }
+
+    void SetModelAnimations()
+    {
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        {
+            ChangeModelAnimationState(IDLEPLAYER);
+        }
+        else
+        {
+            ChangeModelAnimationState(WALKPLAYER);
         }
     }
 }
