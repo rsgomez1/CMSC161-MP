@@ -8,7 +8,10 @@ public class BossController : MonoBehaviour
 
     public void dealDamageToPlayer()
     {
-        Sword.GetComponent<Collider>().enabled = true;
+        if (Sword.TryGetComponent<Collider>(out Collider component) == true)
+        {
+            component.enabled = true;
+        }
     }
 
     public void noDamageToPlayer()

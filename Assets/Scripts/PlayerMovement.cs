@@ -199,9 +199,13 @@ public class PlayerMovement : MonoBehaviour
             if(hit.transform.TryGetComponent<Shield>(out Shield S)) {
                 SoundManager.soundManager.playShieldBLockhSFX();
             }
-            if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth T))
+            if(hit.transform.TryGetComponent<EnemyHealth>(out EnemyHealth E))
             {
-                T.TakeDamage(attackDamage);
+                E.TakeDamage(attackDamage);
+            }
+            if (hit.transform.TryGetComponent<EliteEnemyHealth>(out EliteEnemyHealth EE))
+            {
+                EE.TakeDamage(attackDamage);
             }
             if (hit.transform.TryGetComponent<BossHealth>(out BossHealth B))
             {

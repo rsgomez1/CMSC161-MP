@@ -45,29 +45,6 @@ public class NextScene : MonoBehaviour
         PlayerInstance.Instance.transform.position = new Vector3(movx, movy, movz);
         PlayerInstance.Instance.transform.rotation = new Quaternion(rotx, roty, rotz, 1); ;
 
-        /*if (sceneName == "Level2")
-        {
-            PlayerInstance.Instance.GetComponent<CharacterController>().skinWidth = 0.08f;
-            PlayerInstance.Instance.GetComponent<CharacterController>().radius = 0.5f;
-            PlayerInstance.Instance.GetComponent<CharacterController>().height = 2;
-            PlayerInstance.Instance.GetComponent<CharacterController>().stepOffset = 0.45f;
-            PlayerInstance.Instance.GetComponent<CapsuleCollider>().radius = 0.69f;
-            PlayerInstance.Instance.GetComponent<CapsuleCollider>().height = 2.15f;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().speed = 9;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().gravity = -18;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().jumpHeight = 1.8f;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().groundDistance = 0.1f;
-            PlayerInstance.Instance.GetComponent<Dashing>().dashSpeed = 15;
-            PlayerInstance.Instance.GetComponent<PlayerMovement>().arms.transform.localScale = new Vector3(2.5f, 1.8f, 2.5f);
-            
-            PlayerInstance.Instance.transform.Find("Camera").transform.localPosition = new Vector3(0, 0.45f, 0.05f);
-            PlayerInstance.Instance.transform.Find("Camera").GetComponent<Interactor>().InteractRange = 1.8f;
-            PlayerInstance.Instance.transform.Find("GroundCheck").transform.localPosition = new Vector3(0, -1, 0);
-            PlayerInstance.Instance.transform.Find("Lantern").transform.localPosition = new Vector3(0.3f, -0.27f, 0.4f);
-            PlayerInstance.Instance.transform.Find("Lantern").GetComponent<Light>().range = 9;
-            PlayerInstance.Instance.transform.Find("Lantern").GetComponent<Light>().intensity = 4.2f;
-        }*/
-
         scene.allowSceneActivation = true;
         await Task.Delay(1500);
 
