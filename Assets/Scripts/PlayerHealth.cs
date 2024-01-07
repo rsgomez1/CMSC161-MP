@@ -61,10 +61,8 @@ public class PlayerHealth : MonoBehaviour
         {
             Death();
         }
-        else
-        {
-            SoundManager.soundManager.playHitSFX();
-        }
+
+        SoundManager.soundManager.playHitSFX();
     }
 
     void Death()
