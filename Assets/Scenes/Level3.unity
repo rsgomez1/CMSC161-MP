@@ -2902,34 +2902,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 524481585003254607, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 844794694050865721, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343056253059474904, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562088247639809763, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2869525420593914665, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882331349727646996, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3254954235588272167, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3395499233926333619, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.120193
@@ -2970,53 +2942,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6037968874595375297, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6503574878658787443, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526856066213339006, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708120953487555112, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6997288601846745140, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689254636098287177, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786550010640428671, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8231601124323105618, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8482633386911688184, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
       propertyPath: m_Name
       value: Big Room 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586534910799441171, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8606011136237441641, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079603917016799656, guid: a8632e7f98b997b43af1350e961e798c, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3161,46 +3089,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Room 2
       objectReference: {fileID: 0}
-    - target: {fileID: 562647096089694892, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598199763024636918, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1122984640533237423, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354603254842769996, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1517990741608849953, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2592134295894938615, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -90.37366
-      objectReference: {fileID: 0}
-    - target: {fileID: 5863516795591590895, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Range
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5863516795591590895, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Intensity
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5863516795591590895, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6200803532281651377, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6218994482576994816, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
       propertyPath: m_LocalPosition.x
       value: -75.606895
@@ -3241,14 +3129,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6305073452745481263, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6712085966998160999, guid: b2e3978f452d1534baada69037ca6b82, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3262,30 +3142,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7087375303395069, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 233749445417196023, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 275431433098729909, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 516140316050673947, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184258954815011239, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1244682841989453149, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2118012068528623569, guid: 849913398071f844e819999617226a10, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.120193
@@ -3326,53 +3182,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2504413196900199536, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2589655391719469582, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2627997323540145182, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2987480392975882192, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3617845102498343887, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763639393892011821, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4520330505126446013, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4925783364935819928, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5550124485061180566, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6455343094017421756, guid: 849913398071f844e819999617226a10, type: 3}
       propertyPath: m_Name
       value: Big Room 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7379696083644343140, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7934525318993860891, guid: 849913398071f844e819999617226a10, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
