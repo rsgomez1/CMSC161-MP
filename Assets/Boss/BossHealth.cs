@@ -10,6 +10,7 @@ public class BossHealth : MonoBehaviour
     public Animator animator;
     public GameObject Sword;
     public GameObject Shield;
+    public GameObject GameExit;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class BossHealth : MonoBehaviour
         Destroy(GetComponent<Collider>());
         Destroy(Sword.GetComponent<Collider>());
         Destroy(Shield.GetComponent<Collider>());
+        Destroy(GameExit);
         SoundManager.soundManager.playBossDeathSFX();
     }
 }
