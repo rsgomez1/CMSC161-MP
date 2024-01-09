@@ -17,7 +17,7 @@ public class GameEnd : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            LoadScene("SceneName");
+            LoadScene("GameEnd");
         }
     }
 
