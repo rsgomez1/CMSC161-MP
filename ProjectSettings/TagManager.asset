@@ -9,6 +9,7 @@ TagManager:
   - EnemySword
   - StationaryWaypoint
   - Canvas
+  - Collider
   layers:
   - Default
   - TransparentFX

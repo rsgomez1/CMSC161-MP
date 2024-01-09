@@ -25723,10 +25723,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1508561843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -114.14282, y: -38.553528}
+  m_SizeDelta: {x: 228.2855, y: 77.107}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018191359
 MonoBehaviour:
@@ -25741,7 +25741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2018191360}
-  setTime: 59
 --- !u!114 &2018191360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25789,8 +25788,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -26626,9 +26625,10 @@ GameObject:
   - component: {fileID: 2103020541}
   - component: {fileID: 2103020542}
   - component: {fileID: 2103020543}
+  - component: {fileID: 2103020544}
   m_Layer: 0
   m_Name: NextSceneCollider
-  m_TagString: Untagged
+  m_TagString: Collider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26688,6 +26688,19 @@ MonoBehaviour:
   rotx: 0
   roty: 0
   rotz: 0
+--- !u!114 &2103020544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103020540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 2018191360}
 --- !u!1 &2104007543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013553030096, guid: d6238962ede8add4b877e688a0620c24, type: 3}
@@ -27048,7 +27061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 127745437509670994, guid: 7aa6013beeaad5e40ad6b181dc56a1c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6248040581123639021, guid: 7aa6013beeaad5e40ad6b181dc56a1c3, type: 3}
       propertyPath: Level

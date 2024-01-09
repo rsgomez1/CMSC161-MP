@@ -9341,9 +9341,10 @@ GameObject:
   - component: {fileID: 1887445599}
   - component: {fileID: 1887445598}
   - component: {fileID: 1887445597}
+  - component: {fileID: 1887445600}
   m_Layer: 0
   m_Name: NextSceneCollider
-  m_TagString: Untagged
+  m_TagString: Collider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9403,6 +9404,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1976610458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887445600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887445596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
 --- !u!1001 &1896468028
 PrefabInstance:
   m_ObjectHideFlags: 0
