@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
+    TextMeshProUGUI timerText;
     float startTime;
     bool timerStopped = false;
 
     private void Start()
     {
+        timerText = PlayerInstance.Instance.timerText;
         startTime = Time.time;
         Debug.Log("Timer started");
     }

@@ -11521,6 +11521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1508561842}
   loader: {fileID: 487522041}
+  timerText: {fileID: 2018191360}
 --- !u!143 &843848105
 CharacterController:
   m_ObjectHideFlags: 0
@@ -25740,7 +25741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 2018191360}
 --- !u!114 &2018191360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26700,7 +26700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 2018191360}
 --- !u!1 &2104007543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013553030096, guid: d6238962ede8add4b877e688a0620c24, type: 3}
