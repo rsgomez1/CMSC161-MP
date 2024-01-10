@@ -6,6 +6,7 @@ namespace SkeletonEditor
 
     public class PlayerController : MonoBehaviour
     {
+        public static float playerScore = 123;
         public float mouseRotateSpeed = 0.3f;
 
         private Animator animator;

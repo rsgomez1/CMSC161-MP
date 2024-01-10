@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rank: {fileID: 219636696619501409}
-  name: {fileID: 309938970017820217}
+  playername: {fileID: 309938970017820217}
   score: {fileID: 4559011295050114348}
 --- !u!1 &6386547887014814177
 GameObject:

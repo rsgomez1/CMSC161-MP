@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class Score : MonoBehaviour
+public class Score
 {
-    public string name;
+    public string playername;
     public float score;
 
     public Score(string name, float score)
     {
-        this.name = name;
+        this.playername = name;
         this.score = score;
     }
 }  
