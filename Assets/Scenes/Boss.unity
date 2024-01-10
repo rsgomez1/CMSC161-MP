@@ -2362,7 +2362,6 @@ GameObject:
   - component: {fileID: 2108373196}
   - component: {fileID: 2108373197}
   - component: {fileID: 2108373198}
-  - component: {fileID: 2108373199}
   m_Layer: 0
   m_Name: GameEndCollider
   m_TagString: Collider
@@ -2418,19 +2417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c7aac01c0b8e943a14baed8b624941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2108373199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108373195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  savedTime: 0
 --- !u!1001 &7208817423027258909
 PrefabInstance:
   m_ObjectHideFlags: 0
