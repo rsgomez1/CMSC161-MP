@@ -25935,6 +25935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedTime: 0
 --- !u!114 &2018191360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26872,7 +26873,6 @@ GameObject:
   - component: {fileID: 2103020541}
   - component: {fileID: 2103020542}
   - component: {fileID: 2103020543}
-  - component: {fileID: 2103020544}
   m_Layer: 0
   m_Name: NextSceneCollider
   m_TagString: Collider
@@ -26935,18 +26935,6 @@ MonoBehaviour:
   rotx: 0
   roty: 0
   rotz: 0
---- !u!114 &2103020544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103020540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2104007543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013553030096, guid: d6238962ede8add4b877e688a0620c24, type: 3}

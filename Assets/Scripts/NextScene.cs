@@ -26,6 +26,8 @@ public class NextScene : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            float elapsed = Time.time - Timer.Instance.startTime;
+            Debug.Log("Collision with Player detected. Elapsed time: " + elapsed);
             LoadScene(sceneName);
         }
     }

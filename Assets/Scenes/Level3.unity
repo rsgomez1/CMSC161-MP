@@ -524,7 +524,6 @@ GameObject:
   - component: {fileID: 256057190}
   - component: {fileID: 256057189}
   - component: {fileID: 256057188}
-  - component: {fileID: 256057191}
   m_Layer: 0
   m_Name: NextSceneCollider
   m_TagString: Collider
@@ -587,18 +586,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 212252780}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &256057191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256057187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &312379603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,6 +1139,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: maxHealth
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 1937782058026486252, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1211,14 +1206,6 @@ PrefabInstance:
     - target: {fileID: 8149927267807275618, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: Shield
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: maxHealth
-      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
@@ -2157,6 +2144,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: maxHealth
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 1937782058026486252, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2216,14 +2211,6 @@ PrefabInstance:
     - target: {fileID: 8149927267807275618, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: Shield
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: maxHealth
-      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
