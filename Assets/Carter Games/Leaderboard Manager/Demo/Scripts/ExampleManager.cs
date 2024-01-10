@@ -18,8 +18,12 @@ namespace CarterGames.Assets.LeaderboardManager.Demo
                 Debug.Log($"<color=D6BA64><b>Leaderboard Manager Example</b> | Either the name or score fields were blank, please ensure the fields are filled before using this option.</color>");
                 return;
             }
-            
-            LeaderboardManager.AddEntryToBoard("Example", playerName.text, PlayerController.playerScore);
+
+            // Convert the savedTime (float) to a double before assigning it to playerScore.text
+            float savedTime = TimeSaver.Instance.savedTime;
+            double doubleSavedTime = (double)savedTime;
+
+            LeaderboardManager.AddEntryToBoard("Example", playerName.text, doubleSavedTime);
             playerName.text = string.Empty;
             playerScore.text = string.Empty;
         }

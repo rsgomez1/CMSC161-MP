@@ -13,4 +13,12 @@ public class MainMenu : MonoBehaviour {
         Debug.Log("QUIT!");
         Application.Quit();
     }
+    public void LeaderBoards()
+    {
+        SceneManager.LoadScene("GameEnd");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

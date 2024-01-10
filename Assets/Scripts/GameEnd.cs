@@ -10,6 +10,7 @@ public class GameEnd : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            TimeSaver.Instance.savedTime = Time.time - Timer.Instance.startTime;
             Destroy(PlayerInstance.Instance.gameObject);
             Destroy(SoundManager.soundManager.gameObject);
             Destroy(PlayerHealth.Instance.gameObject);
