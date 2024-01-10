@@ -50,7 +50,7 @@ public class SoundManager : MonoBehaviour
 
     public void playGroundFootStepSFX()
     {
-        audioSource.PlayOneShot(groundFootStepSound);
+        audioSource.PlayOneShot(groundFootStepSound, 0.6f);
     }
 
     public void playRockFootStepSFX()

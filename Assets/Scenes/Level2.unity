@@ -6158,6 +6158,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 387545426235045500, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
+      propertyPath: attackDamage
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1010227432951519147, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -108.130226
@@ -6186,6 +6190,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8f003f4514222da479fd5144daa992fa, type: 2}
+    - target: {fileID: 6270521854052007372, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4277688a56987a84daf44ce48a2c026f, type: 2}
     - target: {fileID: 6319033039618977010, guid: b86d3845c7ca9924d87ea939a38ae1d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9398,7 +9406,7 @@ Transform:
   m_GameObject: {fileID: 1887445596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 102.93552, y: 6.071835, z: 31.2}
+  m_LocalPosition: {x: -104.8, y: 6.071835, z: 382.64}
   m_LocalScale: {x: 1, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9416,7 +9424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
 --- !u!1001 &1896468028
 PrefabInstance:
   m_ObjectHideFlags: 0

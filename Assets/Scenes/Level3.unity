@@ -581,7 +581,7 @@ Transform:
   m_GameObject: {fileID: 256057187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.349998, y: 7.2, z: 422.82}
+  m_LocalPosition: {x: -105.1, y: 7.2, z: 384.64}
   m_LocalScale: {x: 1, y: 1.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -599,7 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726f99f6fde00244996e4fc77a96865c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
 --- !u!1001 &312379603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1153,14 +1152,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: Shield
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: maxHealth
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 1937782058026486252, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1220,6 +1211,14 @@ PrefabInstance:
     - target: {fileID: 8149927267807275618, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: maxHealth
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
@@ -2158,14 +2157,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: Shield
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
-      propertyPath: maxHealth
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 1937782058026486252, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2225,6 +2216,14 @@ PrefabInstance:
     - target: {fileID: 8149927267807275618, guid: a49dfada13ad90b4ea1c1e4ea7bb4c87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}
+      propertyPath: maxHealth
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3391772747112612825, guid: 7518baaf5cd8b3f4694ca04b940775e1, type: 3}

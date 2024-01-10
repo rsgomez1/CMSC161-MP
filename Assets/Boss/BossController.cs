@@ -16,7 +16,10 @@ public class BossController : MonoBehaviour
 
     public void noDamageToPlayer()
     {
-        Sword.GetComponent<Collider>().enabled = false;
+        if (Sword.TryGetComponent<Collider>(out Collider component) == true)
+        {
+            component.enabled = false;
+        }
     }
 
     public void playSlashSFX()
