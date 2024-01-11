@@ -53,4 +53,16 @@ public class EnableMouse : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void PauseClick()
+    {
+        if (pauseMenu.activeSelf && !inventoryUI.activeSelf)
+        {
+            disableM();
+        }
+        else
+        {
+            enableM();
+        }
+    }
 }
