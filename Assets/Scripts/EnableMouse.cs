@@ -23,7 +23,7 @@ public class EnableMouse : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (pauseMenu.activeSelf && !inventoryUI.activeSelf)
             {

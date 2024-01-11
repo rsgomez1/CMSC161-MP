@@ -132,7 +132,7 @@ public class InventorySaveSystem : MonoBehaviour
                 Item item = allItemCodes[key];
                 item.amount = int.Parse(line.Split(SPLIT_CHAR)[1]);
 
-                Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Resources/" + item.itemName + ".prefab", typeof(GameObject));
+                Object prefab = Resources.Load(item.itemName, typeof(GameObject));
                 GameObject clone = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
                 clone.GetComponent<Item>().amount = item.amount;
 
