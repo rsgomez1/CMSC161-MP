@@ -21,11 +21,9 @@ namespace CarterGames.Assets.LeaderboardManager.Demo
 
             // Convert the savedTime (float) to a double before assigning it to playerScore.text
             float savedTime = TimeSaver.Instance.savedTime;
-            double doubleSavedTime = (double)savedTime;
 
-            LeaderboardManager.AddEntryToBoard("Example", playerName.text, doubleSavedTime);
+            LeaderboardManager.AddEntryToBoard("Example", playerName.text, savedTime);
             playerName.text = string.Empty;
-            playerScore.text = string.Empty;
         }
         
         public void RemoveFromBoard()

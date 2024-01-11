@@ -16,6 +16,8 @@ public class GameEnd : MonoBehaviour
             Destroy(PlayerHealth.Instance.gameObject);
             Destroy(InventoryManager.Instance.gameObject);
             Destroy(InventorySaveSystem.Instance.gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("GameEnd");
         }
     }

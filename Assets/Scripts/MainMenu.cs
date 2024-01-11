@@ -15,10 +15,17 @@ public class MainMenu : MonoBehaviour {
     }
     public void LeaderBoards()
     {
-        SceneManager.LoadScene("GameEnd");
+        SceneManager.LoadScene("LeaderboardBack");
     }
+
+    public void LeaderBoardBack()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void Menu()
     {
+        Destroy(TimeSaver.Instance.gameObject);
         SceneManager.LoadScene("Menu");
     }
 }
